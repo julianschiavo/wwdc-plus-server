@@ -52,10 +52,16 @@
     </div>
     <div class="map" id="map"></div>
   </div>
-  <a class="link" href="wwdcplus://">
+  <a class="link" href="wwdcplus://openevent?id=#(id)">
     <div class="base content sent-with icon-container unselectable">
       <img class="icon" src="https://wwdc.plus/event/appicon.png">
-      <p class="aligned-with-icon">Shared with DubDub+</p>
+      <p class="aligned-with-icon">Open in DubDub+</p>
+    </div>
+  </a>
+  <a class="link" href="https://wwdc.plus">
+    <div class="base content sent-with icon-container unselectable">
+      <img class="icon" src="https://wwdc.plus/event/appicon.png">
+      <p class="aligned-with-icon">Get DubDub+</p>
     </div>
   </a>
 </body>

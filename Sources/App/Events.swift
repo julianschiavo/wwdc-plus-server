@@ -69,6 +69,7 @@ public struct Event: Codable, Hashable {
 }
 
 public struct RenderedEvent: Codable {
+    var id: String
     var slug: String
     var name: String
     var description: String
