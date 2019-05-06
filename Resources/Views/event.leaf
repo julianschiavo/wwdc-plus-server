@@ -200,13 +200,11 @@
 
   mapkit.init({
     authorizationCallback: function(token) {
-      token(
-        "eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImtpZCI6IlIzWFc1VzNXSEYifQ.eyJpc3MiOiI3NE44SzVKMk43IiwiZXhwIjoyNDIxMDk3NDc0LjMwOTkwMjIsImlhdCI6MTU1NzA5NzQ3NC4zMDk5MDJ9.1LLOTu0zf8B2nhsiv_K9m4M5nSiZaF_3wEGCWcbLjtv3_awnQKSKcBSHTc9rqyFZgyxKpZhf8ahyO0wveKdCnA"
-      )
+      token("eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImtpZCI6IlIzWFc1VzNXSEYifQ.eyJpc3MiOiI3NE44SzVKMk43IiwiZXhwIjoyNDIxMDk3NDc0LjMwOTkwMjIsImlhdCI6MTU1NzA5NzQ3NC4zMDk5MDJ9.1LLOTu0zf8B2nhsiv_K9m4M5nSiZaF_3wEGCWcbLjtv3_awnQKSKcBSHTc9rqyFZgyxKpZhf8ahyO0wveKdCnA")
     }
   });
 
-  let map = new mapkit.Map("map", {
+  var map = new mapkit.Map("map", {
     mapType: mapkit.Map.MapTypes.MutedStandard,
     tintColor: "#121a2f",
     colorScheme: mapkit.Map.ColorSchemes.Dark,
@@ -216,7 +214,9 @@
   });
 
   mapkit.addEventListener("configuration-change", function(event) {
-    if (event.status != "Initialized") { return }
+    if (event.status != "Initialized") {
+      return
+    }
 
     let coordinates = new mapkit.Coordinate(#(latitude), #(longitude))
     let span = new mapkit.CoordinateSpan(0.005, 0.005)
