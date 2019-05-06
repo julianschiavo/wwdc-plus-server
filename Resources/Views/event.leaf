@@ -198,7 +198,7 @@
     showsUserLocation: true,
     showsMapTypeControl: false
   });
-
+var ddd
   mapkit.addEventListener("configuration-change", function(event) {
     if (event.status == "Initialized") {
       let coordinates = new mapkit.Coordinate(#(latitude), #(longitude))
@@ -213,12 +213,9 @@
       })
 
       geocoder.reverseLookup(coordinates, function(error, data) {
-        console.log("Lookup")
-        console.log(hasOneListenerFired)
-        let result = data.results[0]
-        console.log("OK", results, result)
-        placeName = result.name
-        address = result.formattedAddress
+        ddd = data
+        placeName = data.results[0].formattedAddress
+        address = data.results[0].formattedAddress
 
         let annotation = new mapkit.MarkerAnnotation(coordinates, {
           title: placeName,
@@ -239,8 +236,6 @@
   });
 
   document.addEventListener("DOMContentLoaded", function() {
-    console.log("DOM")
-    console.log(hasOneListenerFired)
     if (hasOneListenerFired == true) {
       document.getElementById('place').innerText = placeName
       document.getElementById('address').innerText = address
