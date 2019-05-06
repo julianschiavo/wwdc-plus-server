@@ -56,7 +56,7 @@ public func renderEvent(_ event: Event) throws -> RenderedEvent {
     }
     
     /// Regex (regexr.com) matches all capital letters or numbers preceded by a lowercase letter to convert UpperCamelCase into hyphen-case
-    let slug = event.id.replacingOccurrences(of: #"([a-z])([A-Z]|\d)"#, with: "$1-$2", options: .regularExpression).lowercased()
+    let slug = event.id.replacingOccurrences(of: "([a-z])([A-Z]|[0-9])", with: "$1-$2", options: .regularExpression).lowercased()
     
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "EEEE, MMMM '\(daySuffix(for: startDate))'"
