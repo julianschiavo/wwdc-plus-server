@@ -79,6 +79,9 @@
 
     .sent-with:hover {
       background-color: rgba(255, 255, 255, .2);
+    }
+
+    .unselectable {
       -webkit-touch-callout: none;
       /* iOS Safari */
       -webkit-user-select: none;
@@ -168,14 +171,14 @@
     <p id="description">#(description)</p>
   </div>
   <div class="base content">
-    <img class="icon" src="/calendar.png">
+    <img class="icon unselectable" src="/calendar.png">
     <div class="aligned-with-icon">
       <h5 id="date">#(date)</h5>
       <p id="time">#(time)</p>
     </div>
   </div>
   <div class="base content">
-    <img class="icon" src="/location.png">
+    <img class="icon unselectable" src="/location.png">
     <div class="aligned-with-icon">
       <h5 id="place"></h5>
       <p id="address"></p>
@@ -183,7 +186,7 @@
     <div class="map" id="map"></div>
   </div>
   <a href="wwdcplus://">
-    <div class="base content sent-with">
+    <div class="base content sent-with unselectable">
       <img class="icon" src="https://wwdc.plus/event/appicon.png">
       <p class="aligned-with-icon">Shared with DubDub+</p>
     </div>
