@@ -198,8 +198,6 @@
   var address = ""
   var hasOneListenerFired = false
 
-  var lookupData
-
   mapkit.init({
     authorizationCallback: function(token) {
       token(
@@ -218,49 +216,51 @@
   });
 
   mapkit.addEventListener("configuration-change", function(event) {
-    if (event.status == "Initialized") {
-      let coordinates = new mapkit.Coordinate(#(latitude), #(longitude))
+    if (event.status != "Initialized") { return }
 
-      let span = new mapkit.CoordinateSpan(0.005, 0.005)
-      let region = new mapkit.CoordinateRegion(coordinates, span)
-      map.region = region
+    let coordinates = new mapkit.Coordinate(#(latitude), #(longitude))
+    let span = new mapkit.CoordinateSpan(0.005, 0.005)
+    let region = new mapkit.CoordinateRegion(coordinates, span)
+    map.region = region
 
-      let geocoder = new mapkit.Geocoder({
-        language: "en",
-        getsUserLocation: false
-      })
-
-      geocoder.reverseLookup(coordinates, function(error, data) {
-        lookupData = data
-        placeName = lookupData.results[0].formattedAddress.split(', ')[0]
-        address = lookupData.results[0].formattedAddress.split(', ').shift().join('\n')
-
-        let annotation = new mapkit.MarkerAnnotation(coordinates, {
-          title: placeName,
-          subtitle: address,
-          color: "#12182f",
-          displayPriority: 1000
-        })
-        map.addAnnotation(annotation)
-
-        if (hasOneListenerFired == true) {
-          document.getElementById('place').innerText = placeName
-          document.getElementById('address').innerText = address
-        } else {
-          hasOneListenerFired = true
-        }
-      })
-    }
+    lookupCoordinates(coordinates)
   });
 
-  document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", updateLocationOnDOM)
+
+  func lookupCoordinates(coordinates) {
+    let geocoder = new mapkit.Geocoder({
+      language: "en",
+      getsUserLocation: false
+    })
+
+    geocoder.reverseLookup(coordinates, function(error, data) {
+      placeName = data.results[0].formattedAddress.split(', ')[0]
+      address = data.results[0].formattedAddress.split(', ').shift().join('\n')
+
+      addAnnotation(coordinates, placeName, address)
+      updateLocationOnDOM()
+    })
+  }
+
+  func addAnnotation(coordinates, placeName, address) {
+    let annotation = new mapkit.MarkerAnnotation(coordinates, {
+      title: placeName,
+      subtitle: address,
+      color: "#12182f",
+      displayPriority: 1000
+    })
+    map.addAnnotation(annotation)
+  }
+
+  func updateLocationOnDOM() {
     if (hasOneListenerFired == true) {
       document.getElementById('place').innerText = placeName
       document.getElementById('address').innerText = address
     } else {
       hasOneListenerFired = true
     }
-  })
+  }
 </script>
 
 </html>
