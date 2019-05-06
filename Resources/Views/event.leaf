@@ -212,15 +212,15 @@
         getsUserLocation: false
       })
 
-      geocoder.reverseLookup(coordinates, function(error, results) {
-        let result = results[0]
+      geocoder.reverseLookup(coordinates, function(error, data) {
+        let result = data.results[0]
         console.log("OK", results, result)
         placeName = result.name
         address = result.formattedAddress
 
         let annotation = new mapkit.MarkerAnnotation(coordinates, {
-          title: result.name,
-          subtitle: result.formattedAddress,
+          title: placeName,
+          subtitle: address,
           color: "#12182f",
           displayPriority: 1000
         })
