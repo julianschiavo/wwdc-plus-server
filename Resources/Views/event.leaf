@@ -198,7 +198,7 @@
     showsUserLocation: true,
     showsMapTypeControl: false
   });
-var ddd
+
   mapkit.addEventListener("configuration-change", function(event) {
     if (event.status == "Initialized") {
       let coordinates = new mapkit.Coordinate(#(latitude), #(longitude))
@@ -213,9 +213,8 @@ var ddd
       })
 
       geocoder.reverseLookup(coordinates, function(error, data) {
-        ddd = data
-        placeName = data.results[0].formattedAddress
-        address = data.results[0].formattedAddress
+        placeName = data.results[0].formattedAddress.split(', ')[0]
+        address = data.results[0].formattedAddress.split(', ').join('\n')
 
         let annotation = new mapkit.MarkerAnnotation(coordinates, {
           title: placeName,
