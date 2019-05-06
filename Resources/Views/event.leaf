@@ -51,6 +51,22 @@
       padding: 5px 5px 5px 5px;
     }
 
+    .icon {
+      width: 25px;
+      height: 25px;
+      vertical-align: middle;
+    }
+
+    .content .icon {
+      margin-left: 5px;
+    }
+
+    .aligned-with-icon {
+      vertical-align: middle;
+      margin-left: 3px;
+      display: inline-block;
+    }
+
     .map {
       padding: 0;
       height: 250px;
@@ -78,16 +94,7 @@
     }
 
     .sent-with p {
-      vertical-align: middle;
-      margin-left: 5px;
       color: #bfbfbf;
-      display: inline-block;
-    }
-
-    .sent-with img {
-      width: 25px;
-      height: 25px;
-      vertical-align: middle;
     }
 
     p {
@@ -161,18 +168,24 @@
     <p id="description">#(description)</p>
   </div>
   <div class="base content">
-    <h5 id="date">#(date)</h5>
-    <p id="time">#(time)</p>
+    <img class="icon" src="/calendar.png">
+    <div class="aligned-with-icon">
+      <h5 id="date">#(date)</h5>
+      <p id="time">#(time)</p>
+    </div>
   </div>
   <div class="base content">
-    <h5 id="place"></h5>
-    <p id="address"></p>
+    <img class="icon" src="/location.png">
+    <div class="aligned-with-icon">
+      <h5 id="place"></h5>
+      <p id="address"></p>
+    </div>
     <div class="map" id="map"></div>
   </div>
   <a href="wwdcplus://">
     <div class="base content sent-with">
-      <img src="https://wwdc.plus/event/appicon.png">
-      <p>Shared with DubDub+</p>
+      <img class="icon" src="https://wwdc.plus/event/appicon.png">
+      <p class="aligned-with-icon">Shared with DubDub+</p>
     </div>
   </a>
 </body>
@@ -214,7 +227,7 @@
 
       geocoder.reverseLookup(coordinates, function(error, data) {
         placeName = data.results[0].formattedAddress.split(', ')[0]
-        address = data.results[0].formattedAddress.split(', ').join('\n')
+        address = data.results[0].formattedAddress.split(', ').shift().join('\n')
 
         let annotation = new mapkit.MarkerAnnotation(coordinates, {
           title: placeName,
