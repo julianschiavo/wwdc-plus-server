@@ -185,9 +185,6 @@
       getsUserLocation: false
     });
     geocoder.reverseLookup(coordinates, function(error, results) {
-      if error != null {
-        return
-      }
       let result = results[0]
       document.getElementById('place').innerText = result.name
       document.getElementById('address').innerText = result.formattedAddress
