@@ -176,41 +176,14 @@
     </div>
   </a>
 </body>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    let coordinates = new mapkit.Coordinate(Number(#(latitude)), Number(#(longitude)))
-
-    let geocoder = new mapkit.Geocoder({
-      language: "en-US",
-      getsUserLocation: false
-    });
-    geocoder.reverseLookup(coordinates, function(error, results) {
-      let result = results[0]
-      document.getElementById('place').innerText = result.name
-      document.getElementById('address').innerText = result.formattedAddress
-    });
-
-    let span = new mapkit.CoordinateSpan(0.005, 0.005)
-    let region = new mapkit.CoordinateRegion(coordinates, span)
-    let annotation = new mapkit.MarkerAnnotation(coordinates, {
-      title: place,
-      subtitle: address,
-      color: "#12182f",
-      displayPriority: 1000
-    })
-    map.region = region
-    map.addAnnotation(annotation)
-  });
-</script>
 <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
 <script>
   mapkit.init({
-    authorizationCallback: function(done) {
-      done(
-        "eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImtpZCI6IlIzWFc1VzNXSEYifQ.eyJpc3MiOiI3NE44SzVKMk43IiwiZXhwIjoyNDIxMDk3NDc0LjMwOTkwMjIsImlhdCI6MTU1NzA5NzQ3NC4zMDk5MDJ9.1LLOTu0zf8B2nhsiv_K9m4M5nSiZaF_3wEGCWcbLjtv3_awnQKSKcBSHTc9rqyFZgyxKpZhf8ahyO0wveKdCnA"
-      )
+    authorizationCallback: function(token) {
+      token("eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImtpZCI6IlIzWFc1VzNXSEYifQ.eyJpc3MiOiI3NE44SzVKMk43IiwiZXhwIjoyNDIxMDk3NDc0LjMwOTkwMjIsImlhdCI6MTU1NzA5NzQ3NC4zMDk5MDJ9.1LLOTu0zf8B2nhsiv_K9m4M5nSiZaF_3wEGCWcbLjtv3_awnQKSKcBSHTc9rqyFZgyxKpZhf8ahyO0wveKdCnA")
     }
   });
+
   let map = new mapkit.Map("map", {
     mapType: mapkit.Map.MapTypes.MutedStandard,
     tintColor: "#121a2f",
@@ -219,6 +192,33 @@
     showsUserLocation: true,
     showsMapTypeControl: false
   });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    let coordinates = new mapkit.Coordinate(#(latitude), #(longitude))
+
+    let span = new mapkit.CoordinateSpan(0.005, 0.005)
+    let region = new mapkit.CoordinateRegion(coordinates, span)
+    map.region = region
+
+    let geocoder = new mapkit.Geocoder({
+      language: "en",
+      getsUserLocation: false
+    })
+
+    geocoder.reverseLookup(coordinates, function(error, results) {
+      let result = results[0]
+      document.getElementById('place').innerText = result.name
+      document.getElementById('address').innerText = result.formattedAddress
+
+      let annotation = new mapkit.MarkerAnnotation(coordinates, {
+        title: result.name,
+        subtitle: result.formattedAddress,
+        color: "#12182f",
+        displayPriority: 1000
+      })
+      map.addAnnotation(annotation)
+    })
+  })
 </script>
 
 </html>
