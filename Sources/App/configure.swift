@@ -1,3 +1,4 @@
+import Leaf
 import Vapor
 
 /// Called before your application initializes.
@@ -13,5 +14,10 @@ public func configure(
     try routes(router)
     services.register(router, as: Router.self)
 
-    // Configure the rest of your application here
+    try services.register(LeafProvider())
+    config.prefer(LeafRenderer.self, for: ViewRenderer.self)
+    
+    var middlewares = MiddlewareConfig()
+    middlewares.use(FileMiddleware.self)
+    services.register(middlewares)
 }

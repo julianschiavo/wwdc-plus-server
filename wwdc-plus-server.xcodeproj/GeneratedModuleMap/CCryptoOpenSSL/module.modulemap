@@ -1,0 +1,4 @@
+module CCryptoOpenSSL {
+    umbrella "/Users/Julian/dotJS/Github/wwdc-plus-server/.build/checkouts/crypto/Sources/CCryptoOpenSSL/include"
+    export *
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta property="og:site_name" content="DubDub+ Event" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DubDub+ Event" />
+  <meta name="twitter:url" content="https://wwdc.plus" />
+  <meta name="twitter:creator" content="justJS" />
+  <!-- Facebook OG -->
+  <meta property="og:title" content="DubDub+ Event" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wwdc.plus" />
+  <meta property="og:locale" content="en_us" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>DubDub+</title>
+  <link rel="stylesheet" href="https://wwdc.date/assets/css/fonts.css">
+  <style>
+    html {
+      background-color: rgb(18, 26, 47);
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    }
+
+    body {
+      font-size: 14px;
+      margin: 0
+    }
+
+    .base {
+      margin: 10px auto 10px auto;
+      width: 60%;
+      background-color: rgba(255, 255, 255, .1);
+      border-radius: 15px;
+    }
+
+    .mk-map-view {
+      border-radius: 10px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .base {
+        width: 90%
+      }
+    }
+
+    .content {
+      padding: 5px 5px 5px 5px;
+    }
+
+    .map {
+      padding: 0;
+      height: 250px;
+    }
+
+    .sent-with {
+      border-radius: 5px;
+      text-align: center
+    }
+
+    .sent-with:hover {
+      background-color: rgba(255, 255, 255, .2);
+      -webkit-touch-callout: none;
+      /* iOS Safari */
+      -webkit-user-select: none;
+      /* Safari */
+      -khtml-user-select: none;
+      /* Konqueror HTML */
+      -moz-user-select: none;
+      /* Firefox */
+      -ms-user-select: none;
+      /* Internet Explorer/Edge */
+      user-select: none;
+      /* Non-prefixed version, Chrome and Opera */
+    }
+
+    .sent-with p {
+      vertical-align: middle;
+      margin-left: 5px;
+      color: #bfbfbf;
+      display: inline-block;
+    }
+
+    .sent-with img {
+      width: 25px;
+      height: 25px;
+      vertical-align: middle;
+    }
+
+    p {
+      color: #e0e0e0;
+      line-height: 1.38105;
+      font-weight: 400;
+      letter-spacing: 0.011em;
+      margin: 5px
+    }
+
+    h1 {
+      font-size: 64px;
+      line-height: 1.0625;
+      font-weight: 600;
+      letter-spacing: -0.009em;
+      color: white;
+      margin: 5px
+    }
+
+    h2,
+    .title {
+      font-size: 48px;
+      line-height: 1.08365;
+      font-weight: 600;
+      letter-spacing: -0.003em;
+      color: white;
+      margin: 5px
+    }
+
+    h3 {
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 1.1;
+      color: white;
+      margin: 5px
+    }
+
+    h4 {
+      font-size: 32px;
+      line-height: 1.125;
+      font-weight: 800;
+      letter-spacing: 0.004em;
+      color: white;
+      margin: 5px
+    }
+
+    h5 {
+      font-size: 24px;
+      line-height: 1.16667;
+      font-weight: 600;
+      letter-spacing: 0.009em;
+      color: white;
+      margin: 5px
+    }
+
+    h6,
+    .description {
+      font-size: 21px;
+      line-height: 1.38105;
+      font-weight: 400;
+      letter-spacing: 0.011em;
+      color: #cccccc;
+      margin: 5px
+    }
+  </style>
+</head>
+
+<body>
+  <div class="base content">
+    <h4 id="title">#(name)</h4>
+    <p id="description">#(description)</p>
+  </div>
+  <div class="base content">
+    <h5 id="date">#(date)</h5>
+    <p id="time">#(time)</p>
+  </div>
+  <div class="base content">
+    <h5 id="place"></h5>
+    <p id="address"></p>
+    <div class="map" id="map"></div>
+  </div>
+  <a href="wwdcplus://">
+    <div class="base content sent-with">
+      <img src="https://wwdc.plus/event/appicon.png">
+      <p>Shared with DubDub+</p>
+    </div>
+  </a>
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    let coordinates = new mapkit.Coordinate(Number(#(latitude)), Number(#(longitude)))
+
+    let geocoder = new mapkit.Geocoder({
+      language: "en-US",
+      getsUserLocation: false
+    });
+    geocoder.reverseLookup(coordinates, function(error, results) {
+      if error != null {
+        return
+      }
+      let result = results[0]
+      document.getElementById('place').innerText = result.name
+      document.getElementById('address').innerText = result.formattedAddress
+    });
+
+    let span = new mapkit.CoordinateSpan(0.005, 0.005)
+    let region = new mapkit.CoordinateRegion(coordinates, span)
+    let annotation = new mapkit.MarkerAnnotation(coordinates, {
+      title: place,
+      subtitle: address,
+      color: "#12182f",
+      displayPriority: 1000
+    })
+    map.region = region
+    map.addAnnotation(annotation)
+  });
+</script>
+<script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
+<script>
+  mapkit.init({
+    authorizationCallback: function(done) {
+      done(
+        "eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImtpZCI6IlIzWFc1VzNXSEYifQ.eyJpc3MiOiI3NE44SzVKMk43IiwiZXhwIjoyNDIxMDk3NDc0LjMwOTkwMjIsImlhdCI6MTU1NzA5NzQ3NC4zMDk5MDJ9.1LLOTu0zf8B2nhsiv_K9m4M5nSiZaF_3wEGCWcbLjtv3_awnQKSKcBSHTc9rqyFZgyxKpZhf8ahyO0wveKdCnA"
+      )
+    }
+  });
+  let map = new mapkit.Map("map", {
+    mapType: mapkit.Map.MapTypes.MutedStandard,
+    tintColor: "#121a2f",
+    colorScheme: mapkit.Map.ColorSchemes.Dark,
+    showsCompass: false,
+    showsUserLocation: true,
+    showsMapTypeControl: false
+  });
+</script>
+
+</html>
