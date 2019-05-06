@@ -178,9 +178,15 @@
 </body>
 <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
 <script>
+  var placeName = ""
+  var address = ""
+  var hasOneListenerFired = false
+
   mapkit.init({
     authorizationCallback: function(token) {
-      token("eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImtpZCI6IlIzWFc1VzNXSEYifQ.eyJpc3MiOiI3NE44SzVKMk43IiwiZXhwIjoyNDIxMDk3NDc0LjMwOTkwMjIsImlhdCI6MTU1NzA5NzQ3NC4zMDk5MDJ9.1LLOTu0zf8B2nhsiv_K9m4M5nSiZaF_3wEGCWcbLjtv3_awnQKSKcBSHTc9rqyFZgyxKpZhf8ahyO0wveKdCnA")
+      token(
+        "eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImtpZCI6IlIzWFc1VzNXSEYifQ.eyJpc3MiOiI3NE44SzVKMk43IiwiZXhwIjoyNDIxMDk3NDc0LjMwOTkwMjIsImlhdCI6MTU1NzA5NzQ3NC4zMDk5MDJ9.1LLOTu0zf8B2nhsiv_K9m4M5nSiZaF_3wEGCWcbLjtv3_awnQKSKcBSHTc9rqyFZgyxKpZhf8ahyO0wveKdCnA"
+      )
     }
   });
 
@@ -193,31 +199,49 @@
     showsMapTypeControl: false
   });
 
-  document.addEventListener("DOMContentLoaded", function() {
-    let coordinates = new mapkit.Coordinate(#(latitude), #(longitude))
+  mapkit.addEventListener("configuration-change", function(event) {
+    if (event.status == "Initialized") {
+      let coordinates = new mapkit.Coordinate(#(latitude), #(longitude))
 
-    let span = new mapkit.CoordinateSpan(0.005, 0.005)
-    let region = new mapkit.CoordinateRegion(coordinates, span)
-    map.region = region
+      let span = new mapkit.CoordinateSpan(0.005, 0.005)
+      let region = new mapkit.CoordinateRegion(coordinates, span)
+      map.region = region
 
-    let geocoder = new mapkit.Geocoder({
-      language: "en",
-      getsUserLocation: false
-    })
-
-    geocoder.reverseLookup(coordinates, function(error, results) {
-      let result = results[0]
-      document.getElementById('place').innerText = result.name
-      document.getElementById('address').innerText = result.formattedAddress
-
-      let annotation = new mapkit.MarkerAnnotation(coordinates, {
-        title: result.name,
-        subtitle: result.formattedAddress,
-        color: "#12182f",
-        displayPriority: 1000
+      let geocoder = new mapkit.Geocoder({
+        language: "en",
+        getsUserLocation: false
       })
-      map.addAnnotation(annotation)
-    })
+
+      geocoder.reverseLookup(coordinates, function(error, results) {
+        let result = results[0]
+        placeName = result.name
+        address = result.formattedAddress
+
+        let annotation = new mapkit.MarkerAnnotation(coordinates, {
+          title: result.name,
+          subtitle: result.formattedAddress,
+          color: "#12182f",
+          displayPriority: 1000
+        })
+        map.addAnnotation(annotation)
+
+        if (hasOneListenerFired == true) {
+          document.getElementById('place').innerText = placeName
+          document.getElementById('address').innerText = address
+        } else {
+          hasOneListenerFired = true
+        }
+      })
+    }
+  });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    if (hasOneListenerFired == true) {
+      document.getElementById('place').innerText = placeName
+      document.getElementById('address').innerText = address
+    } else {
+      hasOneListenerFired = true
+    }
   })
 </script>
 
