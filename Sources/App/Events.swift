@@ -20,8 +20,12 @@ public struct Coordinate: Codable, Hashable {
 
 public struct EventGroup: Codable, Hashable {
     var groupDate: DateComponents
-    
     var items: [Event]
+}
+
+public struct RenderedEventGroup: Codable {
+    var date: String
+    var items: [RenderedEvent]
 }
 
 public struct Event: Codable, Hashable {
@@ -65,6 +69,7 @@ public struct Event: Codable, Hashable {
 }
 
 public struct RenderedEvent: Codable {
+    var slug: String
     var name: String
     var description: String
     

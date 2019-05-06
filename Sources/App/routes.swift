@@ -6,8 +6,18 @@ import Vapor
 ///
 /// [Learn More →](https://docs.vapor.codes/3.0/getting-started/structure/#routesswift)
 public func routes(_ router: Router) throws {
+    router.get { req -> Future<View> in
+        struct Data: Codable {
+            var eventGroups: [RenderedEventGroup]
+        }
+        
+        let eventGroups = try getEventGroups().map { try renderEventGroup($0) }
+        let data = Data(eventGroups: eventGroups)
+        return try req.view().render("all", data)
+    }
+    
     router.get(String.parameter) { req -> Future<View> in
-        let events = try getEvents()
+        let events = try getEventGroups().map { $0.items }.flatMap { $0 }
         let id = try req.parameters.next(String.self).lowercased().replacingOccurrences(of: "-", with: "")
         guard let event = events.first(where: { $0.id.lowercased() == id }) else {
             throw Abort(.forbidden)
@@ -18,14 +28,24 @@ public func routes(_ router: Router) throws {
     }
 }
 
-public func getEvents() throws -> [Event] {
+public func getEventGroups() throws -> [EventGroup] {
     let directory = DirectoryConfig.detect().workDir
     let url = URL(fileURLWithPath: directory).appendingPathComponent("Public", isDirectory: true).appendingPathComponent("events.json")
     let data = try Data(contentsOf: url)
     
     let decoder = JSONDecoder()
     let groups = try decoder.decode([EventGroup].self, from: data)
-    return groups.map { $0.items }.flatMap { $0 }
+    return groups
+}
+
+public func renderEventGroup(_ eventGroup: EventGroup) throws -> RenderedEventGroup {
+    guard let date = Calendar(identifier: .gregorian).date(from: eventGroup.groupDate) else { throw Abort(.badRequest) }
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "EEEE, MMMM '\(daySuffix(for: date))'"
+    let formattedDate = dateFormatter.string(from: date)
+    
+    let items = try eventGroup.items.map { try renderEvent($0) }
+    return RenderedEventGroup(date: formattedDate, items: items)
 }
 
 public func renderEvent(_ event: Event) throws -> RenderedEvent {
@@ -34,6 +54,9 @@ public func renderEvent(_ event: Event) throws -> RenderedEvent {
         let endDate = Calendar(identifier: .gregorian).date(from: event.endingDate) else {
         throw Abort(.badRequest)
     }
+    
+    /// Regex (regexr.com) matches all capital letters or numbers preceded by a lowercase letter to convert UpperCamelCase into hyphen-case
+    let slug = event.id.replacingOccurrences(of: #"([a-z])([A-Z]|\d)"#, with: "$1-$2", options: .regularExpression).lowercased()
     
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "EEEE, MMMM '\(daySuffix(for: startDate))'"
@@ -45,7 +68,7 @@ public func renderEvent(_ event: Event) throws -> RenderedEvent {
     timeFormatter.dateStyle = .none
     let time = timeFormatter.string(from: startDate) + " - " + timeFormatter.string(from: endDate)
     
-    return RenderedEvent(name: event.title, description: event.description, date: date, time: time, latitude: location.latitude, longitude: location.longitude)
+    return RenderedEvent(slug: slug, name: event.title, description: event.description, date: date, time: time, latitude: location.latitude, longitude: location.longitude)
 }
 
 private func daySuffix(for date: Date) -> String {

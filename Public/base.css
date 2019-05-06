@@ -1,0 +1,166 @@
+html {
+  background-color: rgb(18, 26, 47);
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+body {
+  font-size: 14px;
+  margin: 0
+}
+
+a, a>* {
+  text-decoration: none
+}
+
+.base {
+  margin: 10px auto 10px auto;
+  width: 60%;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .base {
+    width: 90%
+  }
+}
+
+.content {
+  padding: 5px 5px 5px 5px;
+  background-color: rgba(255, 255, 255, .1);
+}
+
+.link>.base:hover, .link>.content:hover {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.breadcrumb {
+  margin-left: 0;
+  border-radius: 10px;
+  display: inline-block;
+  margin-left: auto;
+}
+
+.breadcrumb .icon {
+  width: auto;
+  height: 20px;
+}
+
+/* Icons */
+.icon {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.content .icon {
+  margin-left: 5px;
+}
+
+.icon-container {
+  white-space: nowrap;
+}
+
+.aligned-with-icon {
+  vertical-align: middle;
+  white-space: initial;
+  margin-left: 3px;
+  display: inline-block;
+}
+
+/* Map */
+.map {
+  padding: 0;
+  height: 250px;
+}
+
+.mk-map-view {
+  border-radius: 10px;
+}
+
+/* Sent With */
+.sent-with {
+  border-radius: 5px;
+  text-align: center
+}
+
+.sent-with p {
+  color: #bfbfbf;
+}
+
+/* Text Styles */
+p {
+  color: #e0e0e0;
+  line-height: 1.38105;
+  font-weight: 400;
+  letter-spacing: 0.011em;
+  margin: 5px
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 1.0625;
+  font-weight: 800;
+  letter-spacing: -0.009em;
+  color: white;
+  margin: 5px
+}
+
+h2,
+.title {
+  font-size: 48px;
+  line-height: 1.08365;
+  font-weight: 800;
+  letter-spacing: -0.003em;
+  color: white;
+  margin: 5px
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: white;
+  margin: 5px
+}
+
+h4 {
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  letter-spacing: 0.004em;
+  color: white;
+  margin: 5px
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+  color: white;
+  margin: 5px
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 1.38105;
+  font-weight: 400;
+  letter-spacing: 0.011em;
+  color: #cccccc;
+  margin: 5px
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, Chrome and Opera */
+}

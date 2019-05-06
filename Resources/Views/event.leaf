@@ -18,166 +18,33 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>DubDub+</title>
+  <link rel="stylesheet" href="base.css">
   <link rel="stylesheet" href="https://wwdc.date/assets/css/fonts.css">
-  <style>
-    html {
-      background-color: rgb(18, 26, 47);
-      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    }
-
-    body {
-      font-size: 14px;
-      margin: 0
-    }
-
-    .base {
-      margin: 10px auto 10px auto;
-      width: 60%;
-      background-color: rgba(255, 255, 255, .1);
-      border-radius: 15px;
-    }
-
-    .mk-map-view {
-      border-radius: 10px;
-    }
-
-    @media only screen and (max-width: 600px) {
-      .base {
-        width: 90%
-      }
-    }
-
-    .content {
-      padding: 5px 5px 5px 5px;
-    }
-
-    .icon {
-      width: 25px;
-      height: 25px;
-      vertical-align: middle;
-    }
-
-    .content .icon {
-      margin-left: 5px;
-    }
-
-    .aligned-with-icon {
-      vertical-align: middle;
-      margin-left: 3px;
-      display: inline-block;
-    }
-
-    .map {
-      padding: 0;
-      height: 250px;
-    }
-
-    .sent-with {
-      border-radius: 5px;
-      text-align: center
-    }
-
-    .sent-with:hover {
-      background-color: rgba(255, 255, 255, .2);
-    }
-
-    .unselectable {
-      -webkit-touch-callout: none;
-      /* iOS Safari */
-      -webkit-user-select: none;
-      /* Safari */
-      -khtml-user-select: none;
-      /* Konqueror HTML */
-      -moz-user-select: none;
-      /* Firefox */
-      -ms-user-select: none;
-      /* Internet Explorer/Edge */
-      user-select: none;
-      /* Non-prefixed version, Chrome and Opera */
-    }
-
-    .sent-with p {
-      color: #bfbfbf;
-    }
-
-    p {
-      color: #e0e0e0;
-      line-height: 1.38105;
-      font-weight: 400;
-      letter-spacing: 0.011em;
-      margin: 5px
-    }
-
-    h1 {
-      font-size: 64px;
-      line-height: 1.0625;
-      font-weight: 600;
-      letter-spacing: -0.009em;
-      color: white;
-      margin: 5px
-    }
-
-    h2,
-    .title {
-      font-size: 48px;
-      line-height: 1.08365;
-      font-weight: 600;
-      letter-spacing: -0.003em;
-      color: white;
-      margin: 5px
-    }
-
-    h3 {
-      font-size: 40px;
-      font-weight: 600;
-      line-height: 1.1;
-      color: white;
-      margin: 5px
-    }
-
-    h4 {
-      font-size: 32px;
-      line-height: 1.125;
-      font-weight: 800;
-      letter-spacing: 0.004em;
-      color: white;
-      margin: 5px
-    }
-
-    h5 {
-      font-size: 24px;
-      line-height: 1.16667;
-      font-weight: 600;
-      letter-spacing: 0.009em;
-      color: white;
-      margin: 5px
-    }
-
-    h6,
-    .description {
-      font-size: 21px;
-      line-height: 1.38105;
-      font-weight: 400;
-      letter-spacing: 0.011em;
-      color: #cccccc;
-      margin: 5px
-    }
-  </style>
 </head>
 
 <body>
+  <h2 class="base">DubDub+ Events</h2>
+  <div class="base icon-container unselectable">
+    <a class="link" href="/">
+      <div class="content breadcrumb">
+        <img class="icon" src="/chevron-left-light.png">
+        <p class="aligned-with-icon">All Events</p>
+      </div>
+    </a>
+  </div>
+  <br>
   <div class="base content">
     <h4 id="title">#(name)</h4>
     <p id="description">#(description)</p>
   </div>
-  <div class="base content">
+  <div class="base content icon-container">
     <img class="icon unselectable" src="/calendar.png">
     <div class="aligned-with-icon">
       <h5 id="date">#(date)</h5>
       <p id="time">#(time)</p>
     </div>
   </div>
-  <div class="base content">
+  <div class="base content icon-container">
     <img class="icon unselectable" src="/location.png">
     <div class="aligned-with-icon">
       <h5 id="place"></h5>
@@ -185,8 +52,8 @@
     </div>
     <div class="map" id="map"></div>
   </div>
-  <a href="wwdcplus://">
-    <div class="base content sent-with unselectable">
+  <a class="link" href="wwdcplus://">
+    <div class="base content sent-with icon-container unselectable">
       <img class="icon" src="https://wwdc.plus/event/appicon.png">
       <p class="aligned-with-icon">Shared with DubDub+</p>
     </div>
@@ -198,9 +65,47 @@
   var address = ""
   var hasOneListenerFired = false
 
+  function addAnnotation(coordinates, placeName, address) {
+    let annotation = new mapkit.MarkerAnnotation(coordinates, {
+      title: placeName,
+      subtitle: address,
+      color: "#12182f",
+      displayPriority: 1000
+    })
+    map.addAnnotation(annotation)
+  }
+
+  function updateLocationOnDOM() {
+    if (hasOneListenerFired == true) {
+      document.getElementById('place').innerText = placeName
+      document.getElementById('address').innerText = address
+    }
+    hasOneListenerFired = true
+  }
+
+  function lookupCoordinates(coordinates) {
+    let geocoder = new mapkit.Geocoder({
+      language: "en",
+      getsUserLocation: false
+    })
+
+    geocoder.reverseLookup(coordinates, function(error, data) {
+      placeName = data.results[0].formattedAddress.split(', ')[0]
+      address = data.results[0].formattedAddress.split(', ').slice(1).join('\n')
+
+      addAnnotation(coordinates, placeName, address)
+      updateLocationOnDOM()
+    })
+  }
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", updateLocationOnDOM)
+
   mapkit.init({
     authorizationCallback: function(token) {
-      token("eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImtpZCI6IlIzWFc1VzNXSEYifQ.eyJpc3MiOiI3NE44SzVKMk43IiwiZXhwIjoyNDIxMDk3NDc0LjMwOTkwMjIsImlhdCI6MTU1NzA5NzQ3NC4zMDk5MDJ9.1LLOTu0zf8B2nhsiv_K9m4M5nSiZaF_3wEGCWcbLjtv3_awnQKSKcBSHTc9rqyFZgyxKpZhf8ahyO0wveKdCnA")
+      token(
+        "eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImtpZCI6IlIzWFc1VzNXSEYifQ.eyJpc3MiOiI3NE44SzVKMk43IiwiZXhwIjoyNDIxMDk3NDc0LjMwOTkwMjIsImlhdCI6MTU1NzA5NzQ3NC4zMDk5MDJ9.1LLOTu0zf8B2nhsiv_K9m4M5nSiZaF_3wEGCWcbLjtv3_awnQKSKcBSHTc9rqyFZgyxKpZhf8ahyO0wveKdCnA"
+      )
     }
   });
 
@@ -222,45 +127,7 @@
 
       lookupCoordinates(coordinates)
     }
-  });
-
-  document.addEventListener("DOMContentLoaded", function() {
-    updateLocationOnDOM()
   })
-
-  func lookupCoordinates(coordinates) {
-    let geocoder = new mapkit.Geocoder({
-      language: "en",
-      getsUserLocation: false
-    })
-
-    geocoder.reverseLookup(coordinates, function(error, data) {
-      placeName = data.results[0].formattedAddress.split(', ')[0]
-      address = data.results[0].formattedAddress.split(', ').shift().join('\n')
-
-      addAnnotation(coordinates, placeName, address)
-      updateLocationOnDOM()
-    })
-  }
-
-  func addAnnotation(coordinates, placeName, address) {
-    let annotation = new mapkit.MarkerAnnotation(coordinates, {
-      title: placeName,
-      subtitle: address,
-      color: "#12182f",
-      displayPriority: 1000
-    })
-    map.addAnnotation(annotation)
-  }
-
-  func updateLocationOnDOM() {
-    if (hasOneListenerFired == true) {
-      document.getElementById('place').innerText = placeName
-      document.getElementById('address').innerText = address
-    } else {
-      hasOneListenerFired = true
-    }
-  }
 </script>
 
 </html>
