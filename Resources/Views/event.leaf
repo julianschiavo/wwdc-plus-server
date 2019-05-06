@@ -214,6 +214,7 @@
 
       geocoder.reverseLookup(coordinates, function(error, results) {
         let result = results[0]
+        console.log("OK", results, result)
         placeName = result.name
         address = result.formattedAddress
 
