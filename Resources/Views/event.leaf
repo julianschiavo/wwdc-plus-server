@@ -213,6 +213,8 @@
       })
 
       geocoder.reverseLookup(coordinates, function(error, data) {
+        console.log("Lookup")
+        console.log(hasOneListenerFired)
         let result = data.results[0]
         console.log("OK", results, result)
         placeName = result.name
@@ -237,6 +239,8 @@
   });
 
   document.addEventListener("DOMContentLoaded", function() {
+    console.log("DOM")
+    console.log(hasOneListenerFired)
     if (hasOneListenerFired == true) {
       document.getElementById('place').innerText = placeName
       document.getElementById('address').innerText = address
