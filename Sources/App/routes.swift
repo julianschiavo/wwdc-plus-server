@@ -1,4 +1,3 @@
-import CoreLocation
 import Leaf
 import Routing
 import Vapor
