@@ -226,8 +226,9 @@
       })
 
       geocoder.reverseLookup(coordinates, function(error, data) {
-        placeName = data.results[0].formattedAddress.split(', ')[0]
-        address = data.results[0].formattedAddress.split(', ').shift().join('\n')
+        var lookupData = data
+        placeName = lookupData.results[0].formattedAddress.split(', ')[0]
+        address = lookupData.results[0].formattedAddress.split(', ').shift().join('\n')
 
         let annotation = new mapkit.MarkerAnnotation(coordinates, {
           title: placeName,
