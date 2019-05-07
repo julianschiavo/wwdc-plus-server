@@ -27,7 +27,7 @@
   <div class="base icon-container unselectable">
     <a class="link" href="/">
       <div class="content breadcrumb">
-        <img class="icon" src="/chevron-left-light.png">
+        <img class="chevron icon" src="/chevron-left-light.png">
         <p class="aligned-with-icon">All Events</p>
       </div>
     </a>
@@ -37,6 +37,17 @@
     <h4 id="title">#(name)</h4>
     <p id="description">#(description)</p>
   </div>
+  #if(hasTicketLink) {
+    <a class="link" href=#(ticketLink)>
+      <div class="base content icon-container">
+        <img class="icon unselectable" src="/tickets.png">
+        <div class="aligned-with-icon">
+          <h5 id="date">Buy Tickets</h5>
+        </div>
+        <img class="icon chevron right unselectable" src="/chevron-right-light.png">
+      </div>
+    </a>
+  }
   <div class="base content icon-container">
     <img class="icon unselectable" src="/calendar.png">
     <div class="aligned-with-icon">

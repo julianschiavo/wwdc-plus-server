@@ -41,11 +41,6 @@ a, a>* {
   margin-left: auto;
 }
 
-.breadcrumb .icon {
-  width: auto;
-  height: 20px;
-}
-
 /* Icons */
 .icon {
   width: 25px;
@@ -55,6 +50,15 @@ a, a>* {
 
 .content .icon {
   margin-left: 5px;
+}
+
+.chevron {
+  width: auto;
+  height: 20px;
+}
+
+.chevron.right {
+  margin-left: 0;
 }
 
 .icon-container {

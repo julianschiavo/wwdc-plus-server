@@ -79,4 +79,7 @@ public struct RenderedEvent: Codable {
     
     var latitude: Double
     var longitude: Double
+    
+    var hasTicketLink: Bool
+    var ticketLink: URL?
 }

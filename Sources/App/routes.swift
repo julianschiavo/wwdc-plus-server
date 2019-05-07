@@ -68,7 +68,7 @@ public func renderEvent(_ event: Event) throws -> RenderedEvent {
     timeFormatter.dateStyle = .none
     let time = timeFormatter.string(from: startDate) + " - " + timeFormatter.string(from: endDate)
     
-    return RenderedEvent(id: event.id, slug: slug, name: event.title, description: event.description, date: date, time: time, latitude: location.latitude, longitude: location.longitude)
+    return RenderedEvent(id: event.id, slug: slug, name: event.title, description: event.description, date: date, time: time, latitude: location.latitude, longitude: location.longitude, hasTicketLink: event.ticketLink != nil, ticketLink: event.ticketLink)
 }
 
 private func daySuffix(for date: Date) -> String {
