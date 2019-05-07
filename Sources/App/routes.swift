@@ -50,7 +50,7 @@ public func errorView(for error: AppError, req: Request) throws -> Future<View> 
 
 public func getEventGroups() throws -> [EventGroup] {
     let directory = DirectoryConfig.detect().workDir
-    let url = URL(fileURLWithPath: directory).appendingPathComponent("Public", isDirectory: true).appendingPathComponent("events.json")
+    let url = URL(fileURLWithPath: directory).appendingPathComponent("Public", isDirectory: true).appendingPathComponent("all.json")
     let data = try Data(contentsOf: url)
     
     let decoder = JSONDecoder()
@@ -59,7 +59,7 @@ public func getEventGroups() throws -> [EventGroup] {
 }
 
 public func renderEventGroup(_ eventGroup: EventGroup) throws -> RenderedEventGroup {
-    guard let date = Calendar(identifier: .gregorian).date(from: eventGroup.groupDate) else { throw Abort(.badRequest) }
+    guard let date = Calendar(identifier: .gregorian).date(from: eventGroup.date) else { throw Abort(.badRequest) }
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "EEEE, MMMM '\(daySuffix(for: date))'"
     let formattedDate = dateFormatter.string(from: date)
@@ -69,9 +69,8 @@ public func renderEventGroup(_ eventGroup: EventGroup) throws -> RenderedEventGr
 }
 
 public func renderEvent(_ event: Event) throws -> RenderedEvent {
-    guard let location = event.location,
-        let startDate = Calendar(identifier: .gregorian).date(from: event.startDate),
-        let endDate = Calendar(identifier: .gregorian).date(from: event.endingDate) else {
+    guard let startDate = Calendar(identifier: .gregorian).date(from: event.startDate),
+        let endDate = Calendar(identifier: .gregorian).date(from: event.endDate) else {
         throw Abort(.badRequest)
     }
     
@@ -88,7 +87,16 @@ public func renderEvent(_ event: Event) throws -> RenderedEvent {
     timeFormatter.dateStyle = .none
     let time = timeFormatter.string(from: startDate) + " - " + timeFormatter.string(from: endDate)
     
-    return RenderedEvent(id: event.id, slug: slug, name: event.title, description: event.description, date: date, time: time, latitude: location.latitude, longitude: location.longitude, hasTicketLink: event.ticketLink != nil, ticketLink: event.ticketLink)
+    return RenderedEvent(id: event.id,
+                         slug: slug,
+                         name: event.title,
+                         description: event.description,
+                         date: date,
+                         time: time,
+                         latitude: event.location.latitude,
+                         longitude: event.location.longitude,
+                         hasTicketLink: event.ticketLink != nil,
+                         ticketLink: event.ticketLink?.absoluteString)
 }
 
 private func daySuffix(for date: Date) -> String {

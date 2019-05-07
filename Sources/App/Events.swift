@@ -19,7 +19,7 @@ public struct Coordinate: Codable, Hashable {
 }
 
 public struct EventGroup: Codable, Hashable {
-    var groupDate: DateComponents
+    var date: DateComponents
     var items: [Event]
 }
 
@@ -52,20 +52,18 @@ public struct Event: Codable, Hashable {
         }
     }
     
-    var id: String = ""
-    var tag: Tag = .other
+    var id: String
+    var tag: Tag
     
-    var title: String = ""
-    var description: String = ""
+    var title: String
+    var description: String
     
-    var startDate = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: Date())
-    var endingDate = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: Date())
+    var startDate: DateComponents
+    var endDate: DateComponents
     
-    var location: Coordinate?
+    var location: Coordinate
     
     var ticketLink: URL?
-    
-    init() { }
 }
 
 public struct RenderedEvent: Codable {
@@ -81,5 +79,5 @@ public struct RenderedEvent: Codable {
     var longitude: Double
     
     var hasTicketLink: Bool
-    var ticketLink: URL?
+    var ticketLink: String?
 }

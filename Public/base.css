@@ -62,6 +62,7 @@ a, a>* {
 }
 
 .chevron.right {
+  height: 15px;
   margin-left: 0;
 }
 
