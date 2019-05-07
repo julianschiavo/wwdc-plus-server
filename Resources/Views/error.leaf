@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta property="og:site_name" content="DubDub+ Events" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DubDub+ Events" />
+  <meta name="twitter:url" content="https://events.wwdc.plus" />
+  <meta name="twitter:creator" content="justJS" />
+  <!-- Facebook OG -->
+  <meta property="og:title" content="DubDub+ Events" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://events.wwdc.plus" />
+  <meta property="og:locale" content="en_us" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>DubDub+ Events</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="https://wwdc.date/assets/css/fonts.css">
+</head>
+
+<body>
+  <h2 class="base">DubDub+ Events</h2>
+  <div class="base icon-container unselectable">
+    <a class="link" href="/">
+      <div class="content breadcrumb">
+        <img class="chevron icon" src="/chevron-left-light.png">
+        <p class="aligned-with-icon">All Events</p>
+      </div>
+    </a>
+  </div>
+  <br>
+  <h3 class="base center">#(title)</h3>
+  <h6 class="base center">#(description)</h6>
+  <br><br>
+  <a class="link" href="https://wwdc.plus">
+    <div class="base content sent-with icon-container unselectable">
+      <img class="icon" src="https://wwdc.plus/event/appicon.png">
+      <p class="aligned-with-icon">Get DubDub+</p>
+    </div>
+  </a>
+</body>
+</html>

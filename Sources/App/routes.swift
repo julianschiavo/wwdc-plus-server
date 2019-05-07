@@ -2,6 +2,22 @@ import Leaf
 import Routing
 import Vapor
 
+public enum AppError: Error {
+    public struct ErrorData: Codable {
+        var title: String
+        var description: String
+    }
+    
+    case invalidEvent
+    
+    var data: ErrorData {
+        switch self {
+        case .invalidEvent:
+            return ErrorData(title: "Invalid Event", description: "Make sure the event is valid or try again later.")
+        }
+    }
+}
+
 /// Register your application's routes here.
 ///
 /// [Learn More →](https://docs.vapor.codes/3.0/getting-started/structure/#routesswift)
@@ -18,14 +34,18 @@ public func routes(_ router: Router) throws {
     
     router.get(String.parameter) { req -> Future<View> in
         let events = try getEventGroups().map { $0.items }.flatMap { $0 }
-        let id = try req.parameters.next(String.self).lowercased().replacingOccurrences(of: "-", with: "")
+        let id = try req.parameters.next(String.self).replacingOccurrences(of: "-", with: "").lowercased()
         guard let event = events.first(where: { $0.id.lowercased() == id }) else {
-            throw Abort(.forbidden)
+            return try errorView(for: .invalidEvent, req: req)
         }
         
         let renderedEvent = try renderEvent(event)
         return try req.view().render("event", renderedEvent)
     }
+}
+
+public func errorView(for error: AppError, req: Request) throws -> Future<View> {
+    return try req.view().render("error", error.data)
 }
 
 public func getEventGroups() throws -> [EventGroup] {

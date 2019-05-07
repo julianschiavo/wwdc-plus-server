@@ -13,6 +13,10 @@ a, a>* {
   text-decoration: none
 }
 
+.center {
+  text-align: center;
+}
+
 .base {
   margin: 10px auto 10px auto;
   width: 60%;
