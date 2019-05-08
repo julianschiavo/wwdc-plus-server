@@ -1,50 +1,50 @@
 [{
     "date": {
-        "timeZone": {
-            "identifier": "America/Los_Angeles"
-        },
-        "year": 2019,
-        "month": 6,
-        "day": 2
+      "timeZone": {
+        "identifier": "America/Los_Angeles"
+      },
+      "year": 2019,
+      "month": 6,
+      "day": 2
     },
     "items": [{
-        "id": "ScholarshipKickoff",
-        "tag": "Special Event",
-        "requiredKind": "Scholar",
-        "title": "Scholarship Kickoff",
-        "description": "Scholarship recipients, chaperones, and all attendees under 18 years old are invited to join us for the Scholarship Kickoff in San Jose. Details will be provided soon.",
-        "startDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 2,
-            "hour": 10
-        },
-        "endDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 2,
-            "hour": 14
-        },
-        "location": {
-            "latitude": 37.3308,
-            "longitude": -122.0075
-        }
-    }]
-},
-{
-    "date": {
+      "id": "ScholarshipKickoff",
+      "tag": "Special Event",
+      "requiredKind": "Scholar",
+      "title": "Scholarship Kickoff",
+      "description": "Scholarship recipients, chaperones, and all attendees under 18 years old are invited to join us for the Scholarship Kickoff in San Jose. Details will be provided soon.",
+      "startDate": {
         "timeZone": {
-            "identifier": "America/Los_Angeles"
+          "identifier": "America/Los_Angeles"
         },
         "year": 2019,
         "month": 6,
-        "day": 3
+        "day": 2,
+        "hour": 10
+      },
+      "endDate": {
+        "timeZone": {
+          "identifier": "America/Los_Angeles"
+        },
+        "year": 2019,
+        "month": 6,
+        "day": 2,
+        "hour": 14
+      },
+      "location": {
+        "latitude": 37.3308,
+        "longitude": -122.0075
+      }
+    }]
+  },
+  {
+    "date": {
+      "timeZone": {
+        "identifier": "America/Los_Angeles"
+      },
+      "year": 2019,
+      "month": 6,
+      "day": 3
     },
     "items": [{
         "id": "DubDubRun030619",
@@ -52,185 +52,185 @@
         "title": "Dub Dub Run (Unofficial)",
         "description": "Kick off your mornings right with an easy 5k jog along the scenic Guadalupe River while chattting about all the fun stuff announced at WWDC.",
         "startDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 3,
-            "hour": 7,
-            "minute": 20
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 3,
+          "hour": 7,
+          "minute": 20
         },
         "endDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 3,
-            "hour": 8
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 3,
+          "hour": 8
         },
         "location": {
-            "latitude": 37.331,
-            "longitude": -121.894
+          "latitude": 37.331,
+          "longitude": -121.894
         }
-    },
-    {
+      },
+      {
         "id": "Keynote",
         "tag": "Special Event",
         "title": "Keynote",
         "description": "To kick off WWDC, Tim Cook will deliver the opening keynote, where he will announce upcoming software upgrades and new features.",
         "startDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 3,
-            "hour": 10
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 3,
+          "hour": 10
         },
         "endDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 3,
-            "hour": 12
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 3,
+          "hour": 12
         },
         "location": {
-            "latitude": 37.3298,
-            "longitude": -121.8888
+          "latitude": 37.3298,
+          "longitude": -121.8888
         }
-    },
-    {
+      },
+      {
         "id": "StateOfTheUnion",
         "tag": "Special Event",
         "title": "Platforms State of the Union",
         "description": "Learn more about the new features and technologies announced in the Keynote and how to take advantage of them in your own apps at the WWDC19 Platforms State of the Union.",
         "startDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 2,
-            "hour": 14
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 2,
+          "hour": 14
         },
         "endDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 2,
-            "hour": 16
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 2,
+          "hour": 16
         },
         "location": {
-            "latitude": 37.3298,
-            "longitude": -121.8888
+          "latitude": 37.3298,
+          "longitude": -121.8888
         }
-    },
-    {
+      },
+      {
         "id": "AppleDesignAwards",
         "tag": "Special Event",
         "title": "Apple Design Awards",
         "description": "The Apple Design Awards recognize state of the art iOS, macOS, watchOS, and tvOS apps that reflect excellence in design and innovation. Join us for an unforgettable award ceremony celebrating developers and their outstanding work.",
         "startDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 3,
-            "hour": 16,
-            "minute": 30
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 3,
+          "hour": 16,
+          "minute": 30
         },
         "endDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 3,
-            "hour": 17,
-            "minute": 30
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 3,
+          "hour": 17,
+          "minute": 30
         },
         "location": {
-            "latitude": 37.3298,
-            "longitude": -121.8888
+          "latitude": 37.3298,
+          "longitude": -121.8888
         }
-    },
-    {
+      },
+      {
         "id": "AccidentalTechPodcast",
         "tag": "Podcast",
         "title": "Accidental Tech Podcast",
         "description": "A live recording of the WWDC Accidental Tech Podcast at the Hammer Theatre. No WWDC ticket needed.",
         "startDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 3,
-            "hour": 18
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 3,
+          "hour": 18
         },
         "endDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 3,
-            "hour": 20
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 3,
+          "hour": 20
         },
         "location": {
-            "name": "Hammer Theatre",
-            "latitude": 37.3337,
-            "longitude": -121.8865
+          "name": "Hammer Theatre",
+          "latitude": 37.3337,
+          "longitude": -121.8865
         },
         "ticketLink": "http://atp.fm/wwdc"
-    },
-    {
+      },
+      {
         "id": "NightOfDimSum030619",
         "tag": "Other",
         "title": "Night of Dim Sum 2019",
         "description": "Join us for a night of all-you-can-eat dim sum! Located just a couple of miles from downtown San Jose in the Westfield Valley Fair Mall (where there is also an Apple Store and a LEGO store), Din Tai Fung is internationally known as one of the world's best Shanghai dumpling restaurants.",
         "startDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 3,
-            "hour": 19
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 3,
+          "hour": 19
         },
         "endDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 3,
-            "hour": 21
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 3,
+          "hour": 21
         },
         "location": {
-            "name": "Din Tai Fung (Westfield Valley Fair Mall)",
-            "latitude": 37.3261,
-            "longitude": -121.9441
+          "name": "Din Tai Fung (Westfield Valley Fair Mall)",
+          "latitude": 37.3261,
+          "longitude": -121.9441
         },
         "ticketLink": "https://www.eventbrite.com/e/night-of-dim-sum-2019-tickets-54087628553"
-    }
+      }
     ]
-},
-{
+  },
+  {
     "date": {
-        "timeZone": {
-            "identifier": "America/Los_Angeles"
-        },
-        "year": 2019,
-        "month": 6,
-        "day": 4
+      "timeZone": {
+        "identifier": "America/Los_Angeles"
+      },
+      "year": 2019,
+      "month": 6,
+      "day": 4
     },
     "items": [{
         "id": "DubDubClimb040619",
@@ -238,99 +238,99 @@
         "title": "Dub Dub Climb (Unofficial)",
         "description": "What started as a few WWDC participants hitting the rock gym is evolving! Begin your day with a fun indoor climb while meeting other WWDC folks and chatting about all the announcements, afterparties and more!",
         "startDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 4,
-            "hour": 7,
-            "minute": 15
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 4,
+          "hour": 7,
+          "minute": 15
         },
         "endDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 4,
-            "hour": 8,
-            "minute": 30
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 4,
+          "hour": 8,
+          "minute": 30
         },
         "location": {
-            "name": "The Studio",
-            "latitude": 37.330321,
-            "longitude": -121.885770
+          "name": "The Studio",
+          "latitude": 37.330321,
+          "longitude": -121.885770
         }
-    },
-    {
+      },
+      {
         "id": "DubDubRun040619",
         "tag": "Get-Together",
         "title": "Dub Dub Run (Unofficial)",
         "description": "Kick off your mornings right with an easy 5k jog along the scenic Guadalupe River while chattting about all the fun stuff announced at WWDC.",
         "startDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 4,
-            "hour": 7,
-            "minute": 20
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 4,
+          "hour": 7,
+          "minute": 20
         },
         "endDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 4,
-            "hour": 8
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 4,
+          "hour": 8
         },
         "location": {
-            "latitude": 37.331,
-            "longitude": -121.894
+          "latitude": 37.331,
+          "longitude": -121.894
         }
-    },
-    {
+      },
+      {
         "id": "TheTalkShow",
         "tag": "Podcast",
         "title": "The Talk Show with John Gruber Live",
         "description": "Renowned columnist and podcaster John Gruber of Daring Fireball discusses the latest trends in technology and design.",
         "startDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 4,
-            "hour": 19
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 4,
+          "hour": 19
         },
         "endDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 4,
-            "hour": 21
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 4,
+          "hour": 21
         },
         "location": {
-            "name": "California Theatre",
-            "latitude": 37.330800,
-            "longitude": -121.887000
+          "name": "California Theatre",
+          "latitude": 37.330800,
+          "longitude": -121.887000
         }
-    }
+      }
     ]
-},
-{
+  },
+  {
     "date": {
-        "timeZone": {
-            "identifier": "America/Los_Angeles"
-        },
-        "year": 2019,
-        "month": 6,
-        "day": 5
+      "timeZone": {
+        "identifier": "America/Los_Angeles"
+      },
+      "year": 2019,
+      "month": 6,
+      "day": 5
     },
     "items": [{
         "id": "OfficialWWDCRun",
@@ -338,127 +338,127 @@
         "title": "WWDC Run with Nike Run Club",
         "description": "Celebrate WWDC with a one-of-a-kind run through San Jose with the coaches from Nike Run Club. Bring your favorite running shoes, your iPhone or Apple Watch with the Nike Run Club app installed, and a pair of headphones to participate in the fun.",
         "startDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 5,
-            "hour": 7
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 5,
+          "hour": 7
         },
         "endDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 5,
-            "hour": 8
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 5,
+          "hour": 8
         },
         "location": {
-            "latitude": 37.3298,
-            "longitude": -121.8888
+          "latitude": 37.3298,
+          "longitude": -121.8888
         }
-    },
-    {
+      },
+      {
         "id": "DubDubRun050619",
         "tag": "Get-Together",
         "title": "Dub Dub Run (Unofficial)",
         "description": "Kick off your mornings right with an easy 5k jog along the scenic Guadalupe River while chattting about all the fun stuff announced at WWDC.",
         "startDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 5,
-            "hour": 7,
-            "minute": 20
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 5,
+          "hour": 7,
+          "minute": 20
         },
         "endDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 5,
-            "hour": 8
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 5,
+          "hour": 8
         },
         "location": {
-            "latitude": 37.331,
-            "longitude": -121.894
+          "latitude": 37.331,
+          "longitude": -121.894
         }
-    },
-    {
+      },
+      {
         "id": "ConnectedPodcast",
         "tag": "Podcast",
         "title": "Connected by Relay FM",
         "description": "Gathered from the far corners of the globe, the Connected hosts make their annual trip to California to talk about WWDC, Apple’s announcements and the response from the community in what promises to be the most entertaining live podcast of the week.",
         "startDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 5,
-            "hour": 18
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 5,
+          "hour": 18
         },
         "endDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 5,
-            "hour": 20
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 5,
+          "hour": 20
         },
         "location": {
-            "name": "Hammer Theatre",
-            "latitude": 37.3337,
-            "longitude": -121.8865
+          "name": "Hammer Theatre",
+          "latitude": 37.3337,
+          "longitude": -121.8865
         },
         "ticketLink": "https://hammertheatre.vbotickets.com/event/Relay_FM_Connected_Podcast/33940"
-    },
-    {
+      },
+      {
         "id": "JamesDempseyAndTheBreakpoints",
         "tag": "Podcast",
         "title": "James Dempsey and the Breakpoints",
         "description": "Live Near WWDC 2019: Join the iTunes chart-topping nerd band for a night of original programming-oriented music and humor to benefit App Camp For Girls",
         "startDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 5,
-            "hour": 19
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 5,
+          "hour": 19
         },
         "endDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 5,
-            "hour": 23
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 5,
+          "hour": 23
         },
         "location": {
-            "name": "The Ritz San Jose",
-            "latitude": 37.3301,
-            "longitude": -121.8856
+          "name": "The Ritz San Jose",
+          "latitude": 37.3301,
+          "longitude": -121.8856
         },
         "ticketLink": "https://livenearwwdc.com"
-    }
+      }
     ]
-},
-{
+  },
+  {
     "date": {
-        "timeZone": {
-            "identifier": "America/Los_Angeles"
-        },
-        "year": 2019,
-        "month": 6,
-        "day": 6
+      "timeZone": {
+        "identifier": "America/Los_Angeles"
+      },
+      "year": 2019,
+      "month": 6,
+      "day": 6
     },
     "items": [{
         "id": "DubDubClimb060619",
@@ -466,158 +466,158 @@
         "title": "Dub Dub Climb (Unofficial)",
         "description": "What started as a few WWDC participants hitting the rock gym is evolving! Begin your day with a fun indoor climb while meeting other WWDC folks and chatting about all the announcements, afterparties and more!",
         "startDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 6,
-            "hour": 7,
-            "minute": 15
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 6,
+          "hour": 7,
+          "minute": 15
         },
         "endDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 6,
-            "hour": 8,
-            "minute": 30
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 6,
+          "hour": 8,
+          "minute": 30
         },
         "location": {
-            "name": "The Studio",
-            "latitude": 37.330321,
-            "longitude": -121.885770
+          "name": "The Studio",
+          "latitude": 37.330321,
+          "longitude": -121.885770
         }
-    },
-    {
+      },
+      {
         "id": "DubDubRun060619",
         "tag": "Get-Together",
         "title": "Dub Dub Run (Unofficial)",
         "description": "Kick off your mornings right with an easy 5k jog along the scenic Guadalupe River while chattting about all the fun stuff announced at WWDC.",
         "startDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 6,
-            "hour": 7,
-            "minute": 20
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 6,
+          "hour": 7,
+          "minute": 20
         },
         "endDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 6,
-            "hour": 8
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 6,
+          "hour": 8
         },
         "location": {
-            "latitude": 37.331,
-            "longitude": -121.894
+          "latitude": 37.331,
+          "longitude": -121.894
         }
-    },
-    {
-        "id": "NightOfDimSum060619",
-        "tag": "Other",
-        "title": "Night of Dim Sum 2019",
-        "description": "Join us for a night of all-you-can-eat dim sum! Located just a couple of miles from downtown San Jose in the Westfield Valley Fair Mall (where there is also an Apple Store and a LEGO store), Din Tai Fung is internationally known as one of the world's best Shanghai dumpling restaurants.",
-        "startDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 6,
-            "hour": 19
-        },
-        "endDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 6,
-            "hour": 21
-        },
-        "location": {
-            "name": "Din Tai Fung (Westfield Valley Fair Mall)",
-            "latitude": 37.3261,
-            "longitude": -121.9441
-        },
-        "ticketLink": "https://www.eventbrite.com/e/night-of-dim-sum-2019-tickets-54087628553"
-    },
-    {
+      },
+      {
         "id": "Bash",
         "tag": "Special Event",
         "title": "The Bash",
         "description": "Experience incredible music, food, and drinks at Discovery Meadow, just steps away from the McEnery Convention Center.",
         "startDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 6,
-            "hour": 18
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 6,
+          "hour": 18
         },
         "endDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 6,
-            "hour": 22
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 6,
+          "hour": 22
         },
         "location": {
-            "latitude": 37.3278,
-            "longitude": -121.8925
+          "latitude": 37.3278,
+          "longitude": -121.8925
         }
-    }
-    ]
-},
-{
-    "date": {
-        "timeZone": {
+      },
+      {
+        "id": "NightOfDimSum060619",
+        "tag": "Other",
+        "title": "Night of Dim Sum 2019",
+        "description": "Join us for a night of all-you-can-eat dim sum! Located just a couple of miles from downtown San Jose in the Westfield Valley Fair Mall (where there is also an Apple Store and a LEGO store), Din Tai Fung is internationally known as one of the world's best Shanghai dumpling restaurants.",
+        "startDate": {
+          "timeZone": {
             "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 6,
+          "hour": 19
+        },
+        "endDate": {
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 6,
+          "hour": 21
+        },
+        "location": {
+          "name": "Din Tai Fung (Westfield Valley Fair Mall)",
+          "latitude": 37.3261,
+          "longitude": -121.9441
+        },
+        "ticketLink": "https://www.eventbrite.com/e/night-of-dim-sum-2019-tickets-54087628553"
+      }
+    ]
+  },
+  {
+    "date": {
+      "timeZone": {
+        "identifier": "America/Los_Angeles"
+      },
+      "year": 2019,
+      "month": 6,
+      "day": 7
+    },
+    "items": [{
+      "id": "TrySwiftSanJose",
+      "tag": "Other",
+      "title": "try! Swift San Jose",
+      "description": "try! Swift is an international community gathering about the latest advancements in Swift Development, all about bringing together talent from all around the world to collaborate and share advanced knowledge and techniques to improve Swift craftsmanship. ",
+      "startDate": {
+        "timeZone": {
+          "identifier": "America/Los_Angeles"
         },
         "year": 2019,
         "month": 6,
-        "day": 7
-    },
-    "items": [{
-        "id": "TrySwiftSanJose",
-        "tag": "Other",
-        "title": "try! Swift San Jose",
-        "description": "try! Swift is an international community gathering about the latest advancements in Swift Development, all about bringing together talent from all around the world to collaborate and share advanced knowledge and techniques to improve Swift craftsmanship. ",
-        "startDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 7,
-            "hour": 10
+        "day": 7,
+        "hour": 10
+      },
+      "endDate": {
+        "timeZone": {
+          "identifier": "America/Los_Angeles"
         },
-        "endDate": {
-            "timeZone": {
-                "identifier": "America/Los_Angeles"
-            },
-            "year": 2019,
-            "month": 6,
-            "day": 7,
-            "hour": 17
-        },
-        "location": {
-            "name": "Hilton San Jose",
-            "latitude": 37.3293,
-            "longitude": -121.8905
-        },
-        "ticketLink": "https://www.tryswift.co/events/2019/sanjose/"
+        "year": 2019,
+        "month": 6,
+        "day": 7,
+        "hour": 17
+      },
+      "location": {
+        "name": "Hilton San Jose",
+        "latitude": 37.3293,
+        "longitude": -121.8905
+      },
+      "ticketLink": "https://www.tryswift.co/events/2019/sanjose/"
     }]
-},
+  },
 ]
