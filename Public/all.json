@@ -49,7 +49,7 @@
     "items": [{
         "id": "DubDubRun030619",
         "tag": "Get-Together",
-        "title": "Dub Dub Run (Unofficial)",
+        "title": "Dub Dub Run",
         "description": "Kick off your mornings right with an easy 5k jog along the scenic Guadalupe River while chattting about all the fun stuff announced at WWDC.",
         "startDate": {
           "timeZone": {
@@ -114,7 +114,7 @@
           },
           "year": 2019,
           "month": 6,
-          "day": 2,
+          "day": 3,
           "hour": 14
         },
         "endDate": {
@@ -123,7 +123,7 @@
           },
           "year": 2019,
           "month": 6,
-          "day": 2,
+          "day": 3,
           "hour": 16
         },
         "location": {
@@ -233,40 +233,9 @@
       "day": 4
     },
     "items": [{
-        "id": "DubDubClimb040619",
-        "tag": "Get-Together",
-        "title": "Dub Dub Climb (Unofficial)",
-        "description": "What started as a few WWDC participants hitting the rock gym is evolving! Begin your day with a fun indoor climb while meeting other WWDC folks and chatting about all the announcements, afterparties and more!",
-        "startDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 4,
-          "hour": 7,
-          "minute": 15
-        },
-        "endDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 4,
-          "hour": 8,
-          "minute": 30
-        },
-        "location": {
-          "name": "The Studio",
-          "latitude": 37.330321,
-          "longitude": -121.885770
-        }
-      },
-      {
         "id": "DubDubRun040619",
         "tag": "Get-Together",
-        "title": "Dub Dub Run (Unofficial)",
+        "title": "Dub Dub Run",
         "description": "Kick off your mornings right with an easy 5k jog along the scenic Guadalupe River while chattting about all the fun stuff announced at WWDC.",
         "startDate": {
           "timeZone": {
@@ -361,9 +330,40 @@
         }
       },
       {
+        "id": "DubDubClimb050619",
+        "tag": "Get-Together",
+        "title": "Dub Dub Climb",
+        "description": "What started as a few WWDC participants hitting the rock gym is evolving! Begin your day with a fun indoor climb while meeting other WWDC folks and chatting about all the announcements, afterparties and more!",
+        "startDate": {
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 5,
+          "hour": 7,
+          "minute": 15
+        },
+        "endDate": {
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 5,
+          "hour": 8,
+          "minute": 30
+        },
+        "location": {
+          "name": "The Studio",
+          "latitude": 37.330321,
+          "longitude": -121.885770
+        }
+      },
+      {
         "id": "DubDubRun050619",
         "tag": "Get-Together",
-        "title": "Dub Dub Run (Unofficial)",
+        "title": "Dub Dub Run",
         "description": "Kick off your mornings right with an easy 5k jog along the scenic Guadalupe River while chattting about all the fun stuff announced at WWDC.",
         "startDate": {
           "timeZone": {
@@ -388,6 +388,38 @@
           "latitude": 37.331,
           "longitude": -121.894
         }
+      },
+      {
+        "id": "SwiftOverCoffeePodcast",
+        "tag": "Podcast",
+        "title": "Swift over Coffee Live",
+        "description": "Swift over Coffee is celebrating WWDC19 with a special expanded podcast event with guest hosts and lots of discussion of what's new from Cupertino! They'll also be joined by Kristina Fox, Gui Rambo, JP Simard, and Kaya Thomas as we dive into the major changes from WWDC19, what we're excited about, and how it will impact Swift developers over the next 12 months.",
+        "startDate": {
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 5,
+          "hour": 17,
+          "minute": 30
+        },
+        "endDate": {
+          "timeZone": {
+            "identifier": "America/Los_Angeles"
+          },
+          "year": 2019,
+          "month": 6,
+          "day": 5,
+          "hour": 18,
+          "minute": 30
+        },
+        "location": {
+          "name": "San Jose Marriott",
+          "latitude": 37.3302,
+          "longitude": -121.8885
+        },
+        "ticketLink": "https://ti.to/altconf/SwiftoverCoffeeLive"
       },
       {
         "id": "ConnectedPodcast",
@@ -463,7 +495,7 @@
     "items": [{
         "id": "DubDubClimb060619",
         "tag": "Get-Together",
-        "title": "Dub Dub Climb (Unofficial)",
+        "title": "Dub Dub Climb",
         "description": "What started as a few WWDC participants hitting the rock gym is evolving! Begin your day with a fun indoor climb while meeting other WWDC folks and chatting about all the announcements, afterparties and more!",
         "startDate": {
           "timeZone": {
@@ -494,7 +526,7 @@
       {
         "id": "DubDubRun060619",
         "tag": "Get-Together",
-        "title": "Dub Dub Run (Unofficial)",
+        "title": "Dub Dub Run",
         "description": "Kick off your mornings right with an easy 5k jog along the scenic Guadalupe River while chattting about all the fun stuff announced at WWDC.",
         "startDate": {
           "timeZone": {
