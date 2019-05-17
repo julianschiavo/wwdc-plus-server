@@ -28,7 +28,7 @@
   <br>
   #for(group in eventGroups) {
     <h4 class="base">#(group.date)</h4>
-    #for(event in group.items) {
+    #for(event in group.events) {
       <a class="link" href="/#(event.slug)">
         <div class="base content">
           <p>#(event.time)</p>

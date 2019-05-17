@@ -83,6 +83,10 @@
   var address = ""
   var hasOneListenerFired = false
 
+  #if(hasPlaceName) {
+    placeName = "#(placeName)"
+  }
+
   function addAnnotation(coordinates, placeName, address) {
     let annotation = new mapkit.MarkerAnnotation(coordinates, {
       title: placeName,
@@ -108,8 +112,11 @@
     })
 
     geocoder.reverseLookup(coordinates, function(error, data) {
-      placeName = data.results[0].formattedAddress.split(', ')[0]
-      address = data.results[0].formattedAddress.split(', ').slice(1).join('\n')
+      address = data.results[0].formattedAddress.split(', ').join('\n')
+      #if(hasPlaceName == false) {
+          placeName = data.results[0].formattedAddress.split(', ')[0]
+          address = data.results[0].formattedAddress.split(', ').slice(1).join('\n')
+      }
 
       addAnnotation(coordinates, placeName, address)
       updateLocationOnDOM()
