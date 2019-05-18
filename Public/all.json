@@ -553,6 +553,36 @@
         }
       },
       {
+          "id": "LadiesAtWWDC",
+          "tag": "Get-Together",
+          "title": "Ladies at WWDC Dinner",
+          "description": "Enjoy an evening of fun networking, delicious appetizers, awesome swag, and one-of-a-kind cocktails with your fellow women-in-tech during WWDC.",
+          "startDate": {
+              "timeZone": {
+                  "identifier": "America/Los_Angeles"
+              },
+              "year": 2019,
+              "month": 6,
+              "day": 6,
+              "hour": 17
+          },
+          "endDate": {
+              "timeZone": {
+                  "identifier": "America/Los_Angeles"
+              },
+              "year": 2019,
+              "month": 6,
+              "day": 6,
+              "hour": 20
+          },
+          "location": {
+              "name": "Social Lady Bar and Restaurant",
+              "latitude": 37.3352,
+              "longitude": -121.8878
+          },
+          "ticketLink": "https://ti.to/iOS-meetups/ladies-at-wwdc"
+      },
+      {
         "id": "Bash",
         "tag": "Special Event",
         "title": "The Bash",

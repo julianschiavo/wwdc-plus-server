@@ -194,6 +194,17 @@ extension JSONEvent {
                       latitude: 37.331,
                       longitude: -121.894),
             
+            JSONEvent(id: "LadiesAtWWDC",
+                      tag: .meetup,
+                      title: "Ladies at WWDC Dinner",
+                      description: "Enjoy an evening of fun networking, delicious appetizers, awesome swag, and one-of-a-kind cocktails with your fellow women-in-tech during WWDC.",
+                      startDate: .default(day: 6, hour: 17, minute: 0, second: 0),
+                      endDate: .default(day: 6, hour: 20, minute: 0, second: 0),
+                      place: "Social Lady Bar and Restaurant",
+                      latitude: 37.3352,
+                      longitude: -121.8878,
+                      ticketLink: "https://ti.to/iOS-meetups/ladies-at-wwdc"),
+            
             JSONEvent(id: "NightOfDimSum060619",
                       tag: .meetup,
                       title: "Night of Dim Sum 2019",
