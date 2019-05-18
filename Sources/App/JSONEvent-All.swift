@@ -150,7 +150,7 @@ extension JSONEvent {
             JSONEvent(id: "OfficialNikeRun",
                       tag: .meetup,
                       title: "WWDC Run with Nike Run Club",
-                      description: "Celebrate WWDC with a one-of-a-kind run through San Jose with the coaches from Nike Run Club. Bring your favorite running shoes, your iPhone or Apple Watch with the Nike Run Club app installed, and a pair of headphones to participate in the fun. More details soon.",
+                      description: "Celebrate WWDC with a one-of-a-kind run through San Jose with the coaches from Nike Run Club. Bring your favorite running shoes, your iPhone or Apple Watch with the Nike Run Club app installed, and a pair of headphones to participate in the fun.\nPlease note that Apple has yet to confirm that this event is returning.",
                       startDate: .default(day: 5, hour: 7, minute: 0),
                       endDate: .default(day: 5, hour: 8, minute: 0),
                       latitude: 37.3298,
