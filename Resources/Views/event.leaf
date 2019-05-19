@@ -38,12 +38,23 @@
     <h4 id="title">#(name)</h4>
     <p id="description">#(description)</p>
   </div>
-  #if(hasTicketLink) {
+  #if(ticketLink != nil) {
     <a class="link" href=#(ticketLink)>
       <div class="base content icon-container">
         <img class="icon unselectable" src="/tickets.png">
         <div class="aligned-with-icon">
           <h5 id="date">Buy Tickets</h5>
+        </div>
+        <img class="icon chevron right unselectable" src="/chevron-right-light.png">
+      </div>
+    </a>
+  }
+  #if(moreInfoLink != nil) {
+    <a class="link" href=#(moreInfoLink)>
+      <div class="base content icon-container">
+        <img class="icon unselectable" src="/info.png">
+        <div class="aligned-with-icon">
+          <h5 id="date">More Info</h5>
         </div>
         <img class="icon chevron right unselectable" src="/chevron-right-light.png">
       </div>
@@ -83,7 +94,7 @@
   var address = ""
   var hasOneListenerFired = false
 
-  #if(hasPlaceName) {
+  #if(placeName != nil) {
     placeName = "#(placeName)"
   }
 
@@ -113,7 +124,7 @@
 
     geocoder.reverseLookup(coordinates, function(error, data) {
       address = data.results[0].formattedAddress.split(', ').join('\n')
-      #if(hasPlaceName == false) {
+      #if(placeName == nil) {
           placeName = data.results[0].formattedAddress.split(', ')[0]
           address = data.results[0].formattedAddress.split(', ').slice(1).join('\n')
       }

@@ -69,13 +69,12 @@ public struct Event: Codable, Hashable {
     var date: String
     var time: String
     
-    var hasPlaceName: Bool
     var placeName: String?
     var latitude: Double
     var longitude: Double
     
-    var hasTicketLink: Bool
     var ticketLink: String?
+    var moreInfoLink: String?
     
     static func from(_ event: JSONEvent) -> Event? {
         guard let startDate = Calendar(identifier: .gregorian).date(from: event.startDate),
@@ -102,11 +101,10 @@ public struct Event: Codable, Hashable {
                      endDate: endDate,
                      date: date,
                      time: time,
-                     hasPlaceName: event.location.name != nil,
                      placeName: event.location.name,
                      latitude: event.location.latitude,
                      longitude: event.location.longitude,
-                     hasTicketLink: event.ticketLink != nil,
-                     ticketLink: event.ticketLink?.absoluteString)
+                     ticketLink: event.ticketLink?.absoluteString,
+                     moreInfoLink: event.moreInfoLink?.absoluteString)
     }
 }

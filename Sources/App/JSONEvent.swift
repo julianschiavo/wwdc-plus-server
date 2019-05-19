@@ -22,8 +22,9 @@ struct JSONEvent: Content, Codable, Hashable {
     var location: Coordinate
     
     var ticketLink: URL?
+    var moreInfoLink: URL?
     
-    init(id: String, tag: Event.Tag, requiredKind: String? = nil, title: String, description: String, startDate: DateComponents, endDate: DateComponents, place: String? = nil, latitude: Double, longitude: Double, ticketLink: String? = nil) {
+    init(id: String, tag: Event.Tag, requiredKind: String? = nil, title: String, description: String, startDate: DateComponents, endDate: DateComponents, place: String? = nil, latitude: Double, longitude: Double, ticketLink: String? = nil, moreInfoLink: String? = nil) {
         self.id = id
         self.tag = tag
         self.requiredKind = requiredKind
@@ -33,5 +34,6 @@ struct JSONEvent: Content, Codable, Hashable {
         self.endDate = endDate
         self.location = Coordinate(name: place, latitude: latitude, longitude: longitude)
         self.ticketLink = ticketLink != nil ? URL(string: ticketLink!) : nil
+        self.moreInfoLink = moreInfoLink != nil ? URL(string: moreInfoLink!) : nil
     }
 }
