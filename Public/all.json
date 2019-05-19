@@ -289,6 +289,36 @@
           "latitude": 37.330800,
           "longitude": -121.887000
         }
+      },
+      {
+          "id": "VaporAtWWDC",
+          "tag": "Get-Together",
+          "title": "Vapor @ WWDC Meetup",
+          "description": "A meetup to talk about all things server-side Swift and Vapor for those attending WWDC, AltConf or nearby! Location is not yet confirmed (but possibly San Pedro Square).",
+          "startDate": {
+              "timeZone": {
+                  "identifier": "America/Los_Angeles"
+              },
+              "year": 2019,
+              "month": 6,
+              "day": 4,
+              "hour": 19
+          },
+          "endDate": {
+              "timeZone": {
+                  "identifier": "America/Los_Angeles"
+              },
+              "year": 2019,
+              "month": 6,
+              "day": 4,
+              "hour": 22
+          },
+          "location": {
+              "name": "San Pedro Square",
+              "latitude": 37.3355,
+              "longitude": -121.8921
+          },
+          "ticketLink": "https://www.meetup.com/Vapor-WWDC/events/261508450/"
       }
     ]
   },

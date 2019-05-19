@@ -149,6 +149,17 @@ extension JSONEvent {
                       longitude: -121.894,
                       moreInfoLink: "https://dubdub.fitness/run.html"),
             
+            JSONEvent(id: "VaporAtWWDC",
+                      tag: .meetup,
+                      title: "Vapor @ WWDC Meetup",
+                      description: "A meetup to talk about all things server-side Swift and Vapor for those attending WWDC, AltConf or nearby! Location is not yet confirmed (but possibly San Pedro Square).",
+                      startDate: .default(day: 4, hour: 19, minute: 0),
+                      endDate: .default(day: 4, hour: 22, minute: 0),
+                      place: "San Pedro Square",
+                      latitude: 37.3355,
+                      longitude: -121.8921,
+                      ticketLink: "https://www.meetup.com/Vapor-WWDC/events/261508450/"),
+            
             JSONEvent(id: "OfficialNikeRun",
                       tag: .meetup,
                       title: "WWDC Run with Nike Run Club",
