@@ -69,10 +69,10 @@ extension Array where Element == LegacyEvent {
         }
         
         let eventGroups = groupedDictionary.map { item in
-            return LegacyEventGroup(date: item.key, items: item.value.sortedByDate())
+            return LegacyEventGroup(date: item.key, items: item.value)
         }
         
-        return eventGroups.sortedByDate()
+        return eventGroups
     }
 }
 
