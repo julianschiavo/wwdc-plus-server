@@ -420,6 +420,35 @@
         }
       },
       {
+          "id": "CallForCodeWorkshopDay",
+          "tag": "Get-Together",
+          "title": "IBM Call for Code Workshop Day",
+          "description": "Bring your Mac or use one of ours and go deep into the latest enterprise-ready mobile, machine learning, and cloud technologies available for iOS developers. During the day, there are 2 workshops which go in depth into Machine Learning and Server-side Swift. No registration required as these are first-come, first-serve workshops.",
+          "startDate": {
+              "timeZone": {
+                  "identifier": "America/Los_Angeles"
+              },
+              "year": 2019,
+              "month": 6,
+              "day": 5,
+              "hour": 9
+          },
+          "endDate": {
+              "timeZone": {
+                  "identifier": "America/Los_Angeles"
+              },
+              "year": 2019,
+              "month": 6,
+              "day": 5,
+              "hour": 16
+          },
+          "location": {
+              "name": "Willow Glenn Conference Room, San Jose Marriott"
+              "latitude": 37.3308,
+              "longitude": -121.8869
+          }
+      },
+      {
         "id": "SwiftOverCoffeePodcast",
         "tag": "Podcast",
         "title": "Swift over Coffee Live",
@@ -480,6 +509,38 @@
           "longitude": -121.8865
         },
         "ticketLink": "https://hammertheatre.vbotickets.com/event/Relay_FM_Connected_Podcast/33940"
+      },
+      {
+          "id": "CallForCodeReception",
+          "tag": "Get-Together",
+          "title": "IBM Call for Code Reception",
+          "description": "End your day at Apple’s Worldwide Developer’s Conference at IBM’s Call for Code Reception and discover how you and your peers can make a difference in solving society’s most pressing issues. This is your chance to connect with fellow developers for fun and refreshments.",
+          "startDate": {
+              "timeZone": {
+                  "identifier": "America/Los_Angeles"
+              },
+              "year": 2019,
+              "month": 6,
+              "day": 5,
+              "hour": 18,
+              "minute": 30
+          },
+          "endDate": {
+              "timeZone": {
+                  "identifier": "America/Los_Angeles"
+              },
+              "year": 2019,
+              "month": 6,
+              "day": 5,
+              "hour": 20,
+              "minute": 30
+          },
+          "location": {
+              "name": "Continental Bar Lounge and Patio"
+              "latitude": 37.3308,
+              "longitude": -121.8869
+          },
+          "ticketLink": "http://ibm.biz/Call4Code-SJ"
       },
       {
         "id": "JamesDempseyAndTheBreakpoints",

@@ -150,8 +150,7 @@
     tintColor: "#121a2f",
     colorScheme: mapkit.Map.ColorSchemes.Dark,
     showsCompass: false,
-    showsUserLocation: true,
-    showsMapTypeControl: false
+    showsUserLocation: true
   });
 
   mapkit.addEventListener("configuration-change", function(event) {

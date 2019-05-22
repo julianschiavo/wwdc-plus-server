@@ -46,6 +46,10 @@ public func routes(_ router: Router) throws {
     router.get("api", Int.parameter, "events") { req -> [JSONEvent] in
         return JSONEvent.all
     }
+    
+    router.get("all.json") { req -> Response in
+        return req.redirect(to: "/api/1/events")
+    }
 }
 
 public func errorView(for error: AppError, req: Request) throws -> Future<View> {
