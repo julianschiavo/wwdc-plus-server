@@ -59,12 +59,13 @@ extension Array where Element == LegacyEvent {
         calendar.timeZone = TimeZone(identifier: "America/Los_Angeles") ?? .autoupdatingCurrent
         
         let groupedDictionary = [DateComponents: [LegacyEvent]](grouping: self) { event in
-            var lessAccurateDateComponents = event.startDate
-            lessAccurateDateComponents.hour = nil
-            lessAccurateDateComponents.minute = nil
-            lessAccurateDateComponents.second = nil
-            lessAccurateDateComponents.nanosecond = nil
-            return lessAccurateDateComponents
+//            var lessAccurateDateComponents = event.startDate
+//            lessAccurateDateComponents.hour = nil
+//            lessAccurateDateComponents.minute = nil
+//            lessAccurateDateComponents.second = nil
+//            lessAccurateDateComponents.nanosecond = nil
+//            return lessAccurateDateComponents
+            return event.startDate
         }
         
         let eventGroups = groupedDictionary.map { item in
