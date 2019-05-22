@@ -8,11 +8,6 @@
 import Foundation
 import Vapor
 
-struct LegacyJSONEventGroup: Content, Codable {
-    var date: DateComponents
-    var items: [JSONEvent]
-}
-
 struct JSONEvent: Content, Codable, Hashable {
     var id: String
     var tag: Event.Tag

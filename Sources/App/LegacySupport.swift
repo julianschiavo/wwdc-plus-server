@@ -13,6 +13,16 @@ struct LegacyEventGroup: Content, Codable {
     var items: [LegacyEvent]
 }
 
+extension Array where Element == LegacyEventGroup {
+    func sortedByDate() -> [Element] {
+        return sorted { lhs, rhs in
+            guard let lhsDate = Calendar(identifier: .gregorian).date(from: lhs.date),
+                let rhsDate = Calendar(identifier: .gregorian).date(from: rhs.date) else { return false }
+            return lhsDate < rhsDate
+        }
+    }
+}
+
 struct LegacyEvent: Content, Codable {
     var id: String
     var tag: Event.Tag
@@ -27,18 +37,39 @@ struct LegacyEvent: Content, Codable {
     var location: Coordinate
     
     var ticketLink: URL?
-    var moreInfoLink: URL?
     
-    init(id: String, tag: Event.Tag, requiredKind: String? = nil, title: String, description: String, startDate: DateComponents, endDate: DateComponents, place: String? = nil, latitude: Double, longitude: Double, ticketLink: String? = nil, moreInfoLink: String? = nil) {
-        self.id = id
-        self.tag = tag
-        self.requiredKind = requiredKind
-        self.title = title
-        self.description = description
-        self.startDate = startDate
-        self.endDate = endDate
-        self.location = Coordinate(name: place, latitude: latitude, longitude: longitude)
-        self.ticketLink = ticketLink != nil ? URL(string: ticketLink!) : nil
-        self.moreInfoLink = moreInfoLink != nil ? URL(string: moreInfoLink!) : nil
+    static func from(_ event: JSONEvent) -> LegacyEvent {
+        return LegacyEvent(id: event.id, tag: event.tag, requiredKind: event.requiredKind, title: event.title, description: event.description, startDate: event.startDate, endDate: event.endDate, location: event.location, ticketLink: event.ticketLink)
     }
 }
+
+extension Array where Element == LegacyEvent {
+    func sortedByDate() -> [Element] {
+        return sorted { lhs, rhs in
+            guard let lhsDate = Calendar(identifier: .gregorian).date(from: lhs.startDate),
+                let rhsDate = Calendar(identifier: .gregorian).date(from: rhs.startDate) else { return false }
+            return lhsDate < rhsDate
+        }
+    }
+}
+
+extension Array where Element == LegacyEvent {
+    func grouped() -> [LegacyEventGroup] {
+        var calendar = Calendar.autoupdatingCurrent
+        calendar.timeZone = TimeZone(identifier: "America/Los_Angeles") ?? .autoupdatingCurrent
+        
+        let groupedDictionary = [DateComponents: [LegacyEvent]](grouping: self) { event in
+            guard let date = Calendar(identifier: .gregorian).date(from: event.startDate) else { return event.startDate }
+            var lessAccurateDateComponents = calendar.dateComponents([.year, .month, .day], from: date)
+            lessAccurateDateComponents.timeZone = TimeZone(identifier: "America/Los_Angeles")
+            return lessAccurateDateComponents
+        }
+        
+        let eventGroups = groupedDictionary.map { element in
+            return LegacyEventGroup(date: element.key, items: element.value.sortedByDate())
+        }
+        
+        return eventGroups.sortedByDate()
+    }
+}
+
