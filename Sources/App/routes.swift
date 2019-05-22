@@ -47,7 +47,11 @@ public func routes(_ router: Router) throws {
         return JSONEvent.all
     }
     
-    router.get("alll") { req -> [LegacyEventGroup] in
+    router.get("all1") { req -> [LegacyEvent] in
+        return JSONEvent.all.map(LegacyEvent.from)
+    }
+    
+    router.get("all2") { req -> [LegacyEventGroup] in
         return JSONEvent.all.map(LegacyEvent.from).grouped()
     }
 }

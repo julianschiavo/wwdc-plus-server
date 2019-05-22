@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import Vapor
 
-public struct Coordinate: Codable, Hashable {
+public struct Coordinate: Content, Codable, Hashable {
     var name: String?
     var latitude: Double
     var longitude: Double
