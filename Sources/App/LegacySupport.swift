@@ -54,6 +54,20 @@ extension Array where Element == LegacyEvent {
 }
 
 extension Array where Element == LegacyEvent {
+    func groupedtwo() -> [DateComponents: [LegacyEvent]] {
+        var calendar = Calendar.autoupdatingCurrent
+        calendar.timeZone = TimeZone(identifier: "America/Los_Angeles") ?? .autoupdatingCurrent
+        
+        let groupedDictionary = [DateComponents: [LegacyEvent]](grouping: self) { event in
+            guard let date = Calendar(identifier: .gregorian).date(from: event.startDate) else { return event.startDate }
+            var lessAccurateDateComponents = calendar.dateComponents([.year, .month, .day], from: date)
+            lessAccurateDateComponents.timeZone = TimeZone(identifier: "America/Los_Angeles")
+            return lessAccurateDateComponents
+        }
+        
+        return groupedDictionary
+    }
+    
     func grouped() -> [LegacyEventGroup] {
         print("Grouping events")
         var calendar = Calendar.autoupdatingCurrent
