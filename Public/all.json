@@ -443,7 +443,7 @@
               "hour": 16
           },
           "location": {
-              "name": "Willow Glenn Conference Room, San Jose Marriott"
+              "name": "Willow Glenn Conference Room, San Jose Marriott",
               "latitude": 37.3308,
               "longitude": -121.8869
           }
@@ -536,7 +536,7 @@
               "minute": 30
           },
           "location": {
-              "name": "Continental Bar Lounge and Patio"
+              "name": "Continental Bar Lounge and Patio",
               "latitude": 37.3308,
               "longitude": -121.8869
           },
@@ -772,5 +772,5 @@
       },
       "ticketLink": "https://www.tryswift.co/events/2019/sanjose/"
     }]
-  },
+  }
 ]
