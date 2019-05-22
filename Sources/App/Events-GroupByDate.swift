@@ -73,7 +73,6 @@ extension Array where Element == LegacyJSONEventGroup {
 
 extension Array where Element == JSONEvent {
     /// Groups the events by their date, returning an array of `EventGroup`s
-    @available(*, deprecated, message: "Use `groupedAndSortedByDate()` instead")
     func legacyGroupedAndSortedByDate() -> [LegacyJSONEventGroup] {
         var calendar = Calendar.autoupdatingCurrent
         calendar.timeZone = TimeZone(identifier: "America/Los_Angeles") ?? .autoupdatingCurrent

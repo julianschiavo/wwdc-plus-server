@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9DFDF0022954C8C0075797B /* LegacySupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DFDEFF22954C8C0075797B /* LegacySupport.swift */; };
 		OBJ_1000 /* helpers.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_295 /* helpers.c */; };
 		OBJ_1001 /* shims.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_296 /* shims.c */; };
 		OBJ_1007 /* c_nio_sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_590 /* c_nio_sha1.c */; };
@@ -3867,6 +3868,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B9DFDEFF22954C8C0075797B /* LegacySupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacySupport.swift; sourceTree = "<group>"; };
 		"Console::Command::Product" /* Command.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Command.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Console::Console::Product" /* Console.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Console.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Console::Logging::Product" /* Logging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Logging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -6403,7 +6405,7 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -6418,7 +6420,6 @@
 				OBJ_740 /* README.md */,
 				OBJ_741 /* circle.yml */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_503 /* Core 3.9.0 */ = {
@@ -7016,6 +7017,7 @@
 				OBJ_15 /* boot.swift */,
 				OBJ_16 /* configure.swift */,
 				OBJ_17 /* routes.swift */,
+				B9DFDEFF22954C8C0075797B /* LegacySupport.swift */,
 			);
 			name = App;
 			path = Sources/App;
@@ -8442,7 +8444,7 @@
 				English,
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_694 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -9315,6 +9317,7 @@
 			files = (
 				OBJ_747 /* Date-Suffix.swift in Sources */,
 				OBJ_748 /* DateComponents-Easy.swift in Sources */,
+				B9DFDF0022954C8C0075797B /* LegacySupport.swift in Sources */,
 				OBJ_749 /* Event.swift in Sources */,
 				OBJ_750 /* Events-GroupByDate.swift in Sources */,
 				OBJ_751 /* JSONEvent-All.swift in Sources */,
