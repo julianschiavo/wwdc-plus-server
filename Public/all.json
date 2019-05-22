@@ -20,7 +20,8 @@
         "year": 2019,
         "month": 6,
         "day": 2,
-        "hour": 10
+        "hour": 12,
+        "minute": 30
       },
       "endDate": {
         "timeZone": {
@@ -29,7 +30,7 @@
         "year": 2019,
         "month": 6,
         "day": 2,
-        "hour": 14
+        "hour": 16
       },
       "location": {
         "latitude": 37.3308,
@@ -115,7 +116,8 @@
           "year": 2019,
           "month": 6,
           "day": 3,
-          "hour": 14
+          "hour": 14,
+          "minute": 30
         },
         "endDate": {
           "timeZone": {
@@ -124,7 +126,8 @@
           "year": 2019,
           "month": 6,
           "day": 3,
-          "hour": 16
+          "hour": 16,
+          "minute": 30
         },
         "location": {
           "latitude": 37.3298,
@@ -143,8 +146,7 @@
           "year": 2019,
           "month": 6,
           "day": 3,
-          "hour": 16,
-          "minute": 30
+          "hour": 17
         },
         "endDate": {
           "timeZone": {
@@ -153,8 +155,7 @@
           "year": 2019,
           "month": 6,
           "day": 3,
-          "hour": 17,
-          "minute": 30
+          "hour": 18
         },
         "location": {
           "latitude": 37.3298,
@@ -334,8 +335,8 @@
     "items": [{
         "id": "OfficialWWDCRun",
         "tag": "Get-Together",
-        "title": "WWDC Run with Nike Run Club",
-        "description": "Celebrate WWDC with a one-of-a-kind run through San Jose with the coaches from Nike Run Club. Bring your favorite running shoes, your iPhone or Apple Watch with the Nike Run Club app installed, and a pair of headphones to participate in the fun.\nPlease note that Apple has yet to confirm that this event is returning.",
+        "title": "Official WWDC Run with Joan Benoit Samuelson",
+        "description": "Celebrate Global Running Day with an invigorating run through San Jose led by the amazing Joan Benoit Samuelson, winner of the Boston Marathon, the Chicago Marathon, and the first ever Women’s Olympic Marathon. Check-in starts at 6:30 a.m. WWDC ticket required.",
         "startDate": {
           "timeZone": {
             "identifier": "America/Los_Angeles"
@@ -685,7 +686,7 @@
           "year": 2019,
           "month": 6,
           "day": 6,
-          "hour": 18
+          "hour": 19
         },
         "endDate": {
           "timeZone": {

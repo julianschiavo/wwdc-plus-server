@@ -54,6 +54,12 @@ extension Array where Element == LegacyEvent {
 }
 
 extension Array where Element == LegacyEvent {
+    func g() -> [String: [LegacyEvent]] {
+        return [String: [LegacyEvent]](grouping: self, by: { el -> String in
+            return el.title
+        })
+    }
+    
     func grouped() -> [LegacyEventGroup] {
         var calendar = Calendar(identifier: .gregorian)
         calendar.timeZone = TimeZone(identifier: "America/Los_Angeles") ?? .autoupdatingCurrent
