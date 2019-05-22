@@ -54,45 +54,23 @@ extension Array where Element == LegacyEvent {
 }
 
 extension Array where Element == LegacyEvent {
-    func groupedtwo() -> [DateComponents: [LegacyEvent]] {
-        var calendar = Calendar.autoupdatingCurrent
-        calendar.timeZone = TimeZone(identifier: "America/Los_Angeles") ?? .autoupdatingCurrent
-        
-        let groupedDictionary = [DateComponents: [LegacyEvent]](grouping: self) { event in
-            guard let date = Calendar(identifier: .gregorian).date(from: event.startDate) else { return event.startDate }
-            var lessAccurateDateComponents = calendar.dateComponents([.year, .month, .day], from: date)
-            lessAccurateDateComponents.timeZone = TimeZone(identifier: "America/Los_Angeles")
-            return lessAccurateDateComponents
-        }
-        
-        return groupedDictionary
-    }
-    
     func grouped() -> [LegacyEventGroup] {
-        print("Grouping events")
-        var calendar = Calendar.autoupdatingCurrent
+        var calendar = Calendar(identifier: .gregorian)
         calendar.timeZone = TimeZone(identifier: "America/Los_Angeles") ?? .autoupdatingCurrent
-        print("Calendar")
-        let ggroupedDictionary = [Date: [LegacyEvent]](grouping: self) { event in
-            guard let date = Calendar(identifier: .gregorian).date(from: event.startDate) else { return Date() }
-            var lessAccurateDateComponents = calendar.dateComponents([.year, .month, .day], from: date)
-            lessAccurateDateComponents.timeZone = TimeZone(identifier: "America/Los_Angeles")
-            
-            guard let lessAccurateDate = calendar.date(from: lessAccurateDateComponents) else { return date }
-            return lessAccurateDate
-        }
-        print("gg", ggroupedDictionary.count)
+        
         let groupedDictionary = [DateComponents: [LegacyEvent]](grouping: self) { event in
-            guard let date = Calendar(identifier: .gregorian).date(from: event.startDate) else { return event.startDate }
-            var lessAccurateDateComponents = calendar.dateComponents([.year, .month, .day], from: date)
-            lessAccurateDateComponents.timeZone = TimeZone(identifier: "America/Los_Angeles")
+            var lessAccurateDateComponents = event.startDate
+            lessAccurateDateComponents.hour = nil
+            lessAccurateDateComponents.minute = nil
+            lessAccurateDateComponents.second = nil
+            lessAccurateDateComponents.nanosecond = nil
             return lessAccurateDateComponents
         }
-        print("g", groupedDictionary)
-        let eventGroups = groupedDictionary.map { element in
-            return LegacyEventGroup(date: element.key, items: element.value.sortedByDate())
+        
+        let eventGroups = groupedDictionary.map { item in
+            return LegacyEventGroup(date: item.key, items: item.value.sortedByDate())
         }
-        print("eg", eventGroups)
+        
         return eventGroups.sortedByDate()
     }
 }
