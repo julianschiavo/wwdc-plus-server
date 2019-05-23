@@ -221,6 +221,36 @@
           "longitude": -121.9441
         },
         "ticketLink": "https://www.eventbrite.com/e/night-of-dim-sum-2019-tickets-54087628553"
+      },
+      {
+          "id": "TheLoopBash",
+          "tag": "Get-Together",
+          "title": "The Loop Bash",
+          "description": "Join Jim Dalrymple of The Loop for his annual party celebrating the developer community, featuring an incredible night of live music.",
+          "startDate": {
+              "timeZone": {
+                  "identifier": "America/Los_Angeles"
+              },
+              "year": 2019,
+              "month": 6,
+              "day": 3,
+              "hour": 20
+          },
+          "endDate": {
+              "timeZone": {
+                  "identifier": "America/Los_Angeles"
+              },
+              "year": 2019,
+              "month": 6,
+              "day": 3,
+              "hour": 24
+          },
+          "location": {
+              "name": "The Ritz",
+              "latitude": 37.3300,
+              "longitude": -121.8857
+          },
+          "ticketLink": "https://ti.to/jim-dalrymple/the-loop-bash-at-wwdc"
       }
     ]
   },
@@ -266,7 +296,7 @@
         "id": "TheTalkShow",
         "tag": "Podcast",
         "title": "The Talk Show with John Gruber Live",
-        "description": "Renowned columnist and podcaster John Gruber of Daring Fireball discusses the latest trends in technology and design.",
+        "description": "Join renowned columnist and podcaster John Gruber of Daring Fireball as he discusses the latest advancements in technology live from San Jose.",
         "startDate": {
           "timeZone": {
             "identifier": "America/Los_Angeles"
@@ -289,7 +319,8 @@
           "name": "California Theatre",
           "latitude": 37.330800,
           "longitude": -121.887000
-        }
+        },
+        "ticketLink": "https://daringfireball.net/thetalkshow/live"
       },
       {
           "id": "VaporAtWWDC",

@@ -81,7 +81,7 @@ extension JSONEvent {
                       place: "California Theatre",
                       latitude: 37.3308,
                       longitude: -121.887,
-                      moreInfoLink: "https://daringfireball.net/thetalkshow/"),
+                      ticketLink: "https://daringfireball.net/thetalkshow/live"),
             
             JSONEvent(id: "SwiftOverCoffeePodcast",
                       tag: .podcast,
@@ -138,6 +138,18 @@ extension JSONEvent {
                       latitude: 37.3261,
                       longitude: -121.9441,
                       ticketLink: "https://www.eventbrite.com/e/night-of-dim-sum-2019-tickets-54087628553"),
+            
+            JSONEvent(id: "TheLoopBash",
+                      tag: .meetup,
+                      title: "The Loop Bash",
+                      description: "Join Jim Dalrymple of The Loop for his annual party celebrating the developer community, featuring an incredible night of live music.",
+                      startDate: .default(day: 3, hour: 20, minute: 0, second: 0),
+                      endDate: .default(day: 3, hour: 24, minute: 0, second: 0),
+                      place: "The Ritz",
+                      latitude: 37.3300,
+                      longitude: -121.8857,
+                      ticketLink: "https://ti.to/jim-dalrymple/the-loop-bash-at-wwdc",
+                      moreInfoLink: "http://www.loopinsight.com/2019/05/22/the-loop-bash-at-wwdc-2019/"),
             
             JSONEvent(id: "DubDubRun040619",
                       tag: .meetup,
