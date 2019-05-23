@@ -39,23 +39,8 @@ public struct Event: Codable, Hashable {
         case other = "Other"
         case podcast = "Podcast"
         case session = "Session"
-        case meetup = "Get-Together"
+        case meetup = "Meetup"
         case specialEvent = "Special Event"
-        
-        var name: String {
-            switch self {
-            case .meetup:
-                return "Meetup"
-            case .specialEvent:
-                return "Special"
-            default:
-                return rawValue
-            }
-        }
-        
-        var plural: String {
-            return self == .other ? name : name + "s"
-        }
     }
     
     var id: String
