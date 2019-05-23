@@ -36,6 +36,35 @@
         "latitude": 37.3278,
         "longitude": -121.8925
       }
+    },
+    {
+        "id": "sjMacIndie",
+        "tag": "Meetup",
+        "title": "sjMacIndie",
+        "description": "sjMacIndie is the premier networking event that kicks off WWDC. It is for independent macOS and iOS developers, designers, and anyone else who's interested. It is a great opportunity to connect and network!",
+        "startDate": {
+            "timeZone": {
+                "identifier": "America/Los_Angeles"
+            },
+            "year": 2019,
+            "month": 6,
+            "day": 2,
+            "hour": 17
+        },
+        "endDate": {
+            "timeZone": {
+                "identifier": "America/Los_Angeles"
+            },
+            "year": 2019,
+            "month": 6,
+            "day": 2,
+            "hour": 21
+        },
+        "location": {
+            "name": "Forager",
+            "latitude": 37.3298,
+            "longitude": -121.8855
+        }
     }]
   },
   {

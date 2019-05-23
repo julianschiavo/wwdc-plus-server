@@ -231,6 +231,17 @@ extension JSONEvent {
             
             // Third Party
             
+            JSONEvent(id: "sjMacIndie",
+                      tag: .meetup,
+                      title: "sjMacIndie",
+                      description: "sjMacIndie is the premier networking event that kicks off WWDC. It is for independent macOS and iOS developers, designers, and anyone else who's interested. It is a great opportunity to connect and network!",
+                      startDate: .default(day: 2, hour: 17, minute: 0, second: 0),
+                      endDate: .default(day: 2, hour: 21, minute: 0, second: 0),
+                      place: "Forager",
+                      latitude: 37.3298,
+                      longitude: -121.8855,
+                      moreInfoLink: "http://sfmacindie.com"),
+            
             JSONEvent(id: "DubDubRun030619",
                       tag: .meetup,
                       title: "Dub Dub Run",
