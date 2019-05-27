@@ -223,13 +223,24 @@ extension JSONEvent {
                       tag: .meetup,
                       title: "App Design Get-Together",
                       description: "Bring your lunch and engage in casual conversations with fellow developers and Apple staff on designing apps for everyone. You can ask questions, and share your learnings or success stories. Get inspired, share experiences, and envision new possibilities together.",
-                      startDate: .default(day: 7, hour: 16, minute: 0, second: 0),
-                      endDate: .default(day: 7, hour: 17, minute: 30, second: 0),
+                      startDate: .default(day: 7, hour: 11, minute: 30, second: 0),
+                      endDate: .default(day: 7, hour: 12, minute: 30, second: 0),
                       place: "Market Terrace, San Jose McEnery Convention Center",
                       latitude: 37.3298,
                       longitude: -121.8888),
             
             // Third Party
+            
+            JSONEvent(id: "CoreSushi",
+                      tag: .meetup,
+                      title: "Core Sushi 6.0",
+                      description: "The 6th year of delicious omakase with fellow developers on the Saturday evening before WWDC! Plan on $70/person for the night - includes food, drink, and tip.",
+                      startDate: .default(day: 1, hour: 19, minute: 0, second: 0),
+                      endDate: .default(day: 1, hour: 21, minute: 0, second: 0),
+                      place: "Furusato Sushi",
+                      latitude: 37.2863,
+                      longitude: -121.9794,
+                      ticketLink: "https://www.evite.com/event/03D7IE2EO62OAA5DWEPJJHGT7R6KNA/rsvp"),
             
             JSONEvent(id: "sjMacIndie",
                       tag: .meetup,

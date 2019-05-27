@@ -1,837 +1,888 @@
-[{
-    "date": {
-      "timeZone": {
-        "identifier": "America/Los_Angeles"
-      },
-      "year": 2019,
-      "month": 6,
-      "day": 2
-    },
-    "items": [{
-      "id": "ScholarshipKickoff",
-      "tag": "Special Event",
-      "requiredKind": "Scholar",
-      "title": "Scholarship Kickoff",
-      "description": "Scholarship recipients, chaperones, and all attendees under 18 years old are invited to the Scholarship Kickoff. Join us at Discovery Meadow for lunch, games, conversations with Apple engineers and staff, and more. ",
-      "startDate": {
-        "timeZone": {
-          "identifier": "America/Los_Angeles"
+[
+    {
+        "date": {
+            "timeZone": {
+                "identifier": "America/Los_Angeles"
+            },
+            "year": 2019,
+            "month": 6,
+            "day": 1
         },
-        "year": 2019,
-        "month": 6,
-        "day": 2,
-        "hour": 12,
-        "minute": 30
-      },
-      "endDate": {
-        "timeZone": {
-          "identifier": "America/Los_Angeles"
-        },
-        "year": 2019,
-        "month": 6,
-        "day": 2,
-        "hour": 16
-      },
-      "location": {
-        "latitude": 37.3278,
-        "longitude": -121.8925
-      }
+        "items": [
+            {
+                "id": "CoreSushi",
+                "tag": "Get-Together",
+                "title": "Core Sushi 6.0",
+                "description": "The 6th year of delicious omakase with fellow developers on the Saturday evening before WWDC! Plan on $70/person for the night - includes food, drink, and tip.",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 1,
+                    "hour": 19
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 1,
+                    "hour": 21
+                },
+                "location": {
+                    "name": "Furusato Sushi",
+                    "latitude": 37.2863,
+                    "longitude": -121.9794
+                },
+                "ticketLink": "https://www.evite.com/event/03D7IE2EO62OAA5DWEPJJHGT7R6KNA/rsvp"
+            }
+        ]
     },
     {
-        "id": "sjMacIndie",
-        "tag": "Get-Together",
-        "title": "sjMacIndie",
-        "description": "sjMacIndie is the premier networking event that kicks off WWDC. It is for independent macOS and iOS developers, designers, and anyone else who's interested. It is a great opportunity to connect and network!",
-        "startDate": {
+        "date": {
             "timeZone": {
                 "identifier": "America/Los_Angeles"
             },
             "year": 2019,
             "month": 6,
-            "day": 2,
-            "hour": 17
+            "day": 2
         },
-        "endDate": {
+        "items": [
+            {
+                "id": "ScholarshipKickoff",
+                "tag": "Special Event",
+                "requiredKind": "Scholar",
+                "title": "Scholarship Kickoff",
+                "description": "Scholarship recipients, chaperones, and all attendees under 18 years old are invited to the Scholarship Kickoff. Join us at Discovery Meadow for lunch, games, conversations with Apple engineers and staff, and more. ",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 2,
+                    "hour": 12,
+                    "minute": 30
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 2,
+                    "hour": 16
+                },
+                "location": {
+                    "latitude": 37.3278,
+                    "longitude": -121.8925
+                }
+            },
+            {
+                "id": "sjMacIndie",
+                "tag": "Get-Together",
+                "title": "sjMacIndie",
+                "description": "sjMacIndie is the premier networking event that kicks off WWDC. It is for independent macOS and iOS developers, designers, and anyone else who's interested. It is a great opportunity to connect and network!",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 2,
+                    "hour": 17
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 2,
+                    "hour": 21
+                },
+                "location": {
+                    "name": "Forager",
+                    "latitude": 37.3298,
+                    "longitude": -121.8855
+                }
+            }
+        ]
+    },
+    {
+        "date": {
             "timeZone": {
                 "identifier": "America/Los_Angeles"
             },
             "year": 2019,
             "month": 6,
-            "day": 2,
-            "hour": 21
+            "day": 3
         },
-        "location": {
-            "name": "Forager",
-            "latitude": 37.3298,
-            "longitude": -121.8855
-        }
-    }]
-  },
-  {
-    "date": {
-      "timeZone": {
-        "identifier": "America/Los_Angeles"
-      },
-      "year": 2019,
-      "month": 6,
-      "day": 3
+        "items": [
+            {
+                "id": "DubDubRun030619",
+                "tag": "Get-Together",
+                "title": "Dub Dub Run",
+                "description": "Kick off your mornings right with an easy 5k jog along the scenic Guadalupe River while chattting about all the fun stuff announced at WWDC.",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 3,
+                    "hour": 7,
+                    "minute": 20
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 3,
+                    "hour": 8
+                },
+                "location": {
+                    "latitude": 37.331,
+                    "longitude": -121.894
+                }
+            },
+            {
+                "id": "Keynote",
+                "tag": "Special Event",
+                "title": "Keynote",
+                "description": "To kick off WWDC, Tim Cook will deliver the opening keynote, where he will announce upcoming software upgrades and new features.",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 3,
+                    "hour": 10
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 3,
+                    "hour": 12
+                },
+                "location": {
+                    "latitude": 37.3298,
+                    "longitude": -121.8888
+                }
+            },
+            {
+                "id": "StateOfTheUnion",
+                "tag": "Special Event",
+                "title": "Platforms State of the Union",
+                "description": "Learn more about the new features and technologies announced in the Keynote and how to take advantage of them in your own apps at the WWDC19 Platforms State of the Union.",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 3,
+                    "hour": 14,
+                    "minute": 30
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 3,
+                    "hour": 16,
+                    "minute": 30
+                },
+                "location": {
+                    "latitude": 37.3298,
+                    "longitude": -121.8888
+                }
+            },
+            {
+                "id": "AppleDesignAwards",
+                "tag": "Special Event",
+                "title": "Apple Design Awards",
+                "description": "The Apple Design Awards recognize state of the art iOS, macOS, watchOS, and tvOS apps that reflect excellence in design and innovation. Join us for an unforgettable award ceremony celebrating developers and their outstanding work.",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 3,
+                    "hour": 17
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 3,
+                    "hour": 18
+                },
+                "location": {
+                    "latitude": 37.3298,
+                    "longitude": -121.8888
+                }
+            },
+            {
+                "id": "AccidentalTechPodcast",
+                "tag": "Podcast",
+                "title": "Accidental Tech Podcast",
+                "description": "A live recording of the WWDC Accidental Tech Podcast at the Hammer Theatre. No WWDC ticket needed.",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 3,
+                    "hour": 18
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 3,
+                    "hour": 20
+                },
+                "location": {
+                    "name": "Hammer Theatre",
+                    "latitude": 37.3337,
+                    "longitude": -121.8865
+                },
+                "ticketLink": "http://atp.fm/wwdc"
+            },
+            {
+                "id": "NightOfDimSum030619",
+                "tag": "Other",
+                "title": "Night of Dim Sum 2019",
+                "description": "Join us for a night of all-you-can-eat dim sum! Located just a couple of miles from downtown San Jose in the Westfield Valley Fair Mall (where there is also an Apple Store and a LEGO store), Din Tai Fung is internationally known as one of the world's best Shanghai dumpling restaurants.",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 3,
+                    "hour": 19
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 3,
+                    "hour": 21
+                },
+                "location": {
+                    "name": "Din Tai Fung (Westfield Valley Fair Mall)",
+                    "latitude": 37.3261,
+                    "longitude": -121.9441
+                },
+                "ticketLink": "https://www.eventbrite.com/e/night-of-dim-sum-2019-tickets-54087628553"
+            },
+            {
+                "id": "TheLoopBash",
+                "tag": "Get-Together",
+                "title": "The Loop Bash",
+                "description": "Join Jim Dalrymple of The Loop for his annual party celebrating the developer community, featuring an incredible night of live music.",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 3,
+                    "hour": 20
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 3,
+                    "hour": 24
+                },
+                "location": {
+                    "name": "The Ritz",
+                    "latitude": 37.33,
+                    "longitude": -121.8857
+                },
+                "ticketLink": "https://ti.to/jim-dalrymple/the-loop-bash-at-wwdc"
+            }
+        ]
     },
-    "items": [{
-        "id": "DubDubRun030619",
-        "tag": "Get-Together",
-        "title": "Dub Dub Run",
-        "description": "Kick off your mornings right with an easy 5k jog along the scenic Guadalupe River while chattting about all the fun stuff announced at WWDC.",
-        "startDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 3,
-          "hour": 7,
-          "minute": 20
+    {
+        "date": {
+            "timeZone": {
+                "identifier": "America/Los_Angeles"
+            },
+            "year": 2019,
+            "month": 6,
+            "day": 4
         },
-        "endDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 3,
-          "hour": 8
-        },
-        "location": {
-          "latitude": 37.331,
-          "longitude": -121.894
-        }
-      },
-      {
-        "id": "Keynote",
-        "tag": "Special Event",
-        "title": "Keynote",
-        "description": "To kick off WWDC, Tim Cook will deliver the opening keynote, where he will announce upcoming software upgrades and new features.",
-        "startDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 3,
-          "hour": 10
-        },
-        "endDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 3,
-          "hour": 12
-        },
-        "location": {
-          "latitude": 37.3298,
-          "longitude": -121.8888
-        }
-      },
-      {
-        "id": "StateOfTheUnion",
-        "tag": "Special Event",
-        "title": "Platforms State of the Union",
-        "description": "Learn more about the new features and technologies announced in the Keynote and how to take advantage of them in your own apps at the WWDC19 Platforms State of the Union.",
-        "startDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 3,
-          "hour": 14,
-          "minute": 30
-        },
-        "endDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 3,
-          "hour": 16,
-          "minute": 30
-        },
-        "location": {
-          "latitude": 37.3298,
-          "longitude": -121.8888
-        }
-      },
-      {
-        "id": "AppleDesignAwards",
-        "tag": "Special Event",
-        "title": "Apple Design Awards",
-        "description": "The Apple Design Awards recognize state of the art iOS, macOS, watchOS, and tvOS apps that reflect excellence in design and innovation. Join us for an unforgettable award ceremony celebrating developers and their outstanding work.",
-        "startDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 3,
-          "hour": 17
-        },
-        "endDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 3,
-          "hour": 18
-        },
-        "location": {
-          "latitude": 37.3298,
-          "longitude": -121.8888
-        }
-      },
-      {
-        "id": "AccidentalTechPodcast",
-        "tag": "Podcast",
-        "title": "Accidental Tech Podcast",
-        "description": "A live recording of the WWDC Accidental Tech Podcast at the Hammer Theatre. No WWDC ticket needed.",
-        "startDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 3,
-          "hour": 18
-        },
-        "endDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 3,
-          "hour": 20
-        },
-        "location": {
-          "name": "Hammer Theatre",
-          "latitude": 37.3337,
-          "longitude": -121.8865
-        },
-        "ticketLink": "http://atp.fm/wwdc"
-      },
-      {
-        "id": "NightOfDimSum030619",
-        "tag": "Other",
-        "title": "Night of Dim Sum 2019",
-        "description": "Join us for a night of all-you-can-eat dim sum! Located just a couple of miles from downtown San Jose in the Westfield Valley Fair Mall (where there is also an Apple Store and a LEGO store), Din Tai Fung is internationally known as one of the world's best Shanghai dumpling restaurants.",
-        "startDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 3,
-          "hour": 19
-        },
-        "endDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 3,
-          "hour": 21
-        },
-        "location": {
-          "name": "Din Tai Fung (Westfield Valley Fair Mall)",
-          "latitude": 37.3261,
-          "longitude": -121.9441
-        },
-        "ticketLink": "https://www.eventbrite.com/e/night-of-dim-sum-2019-tickets-54087628553"
-      },
-      {
-          "id": "TheLoopBash",
-          "tag": "Get-Together",
-          "title": "The Loop Bash",
-          "description": "Join Jim Dalrymple of The Loop for his annual party celebrating the developer community, featuring an incredible night of live music.",
-          "startDate": {
-              "timeZone": {
-                  "identifier": "America/Los_Angeles"
-              },
-              "year": 2019,
-              "month": 6,
-              "day": 3,
-              "hour": 20
-          },
-          "endDate": {
-              "timeZone": {
-                  "identifier": "America/Los_Angeles"
-              },
-              "year": 2019,
-              "month": 6,
-              "day": 3,
-              "hour": 24
-          },
-          "location": {
-              "name": "The Ritz",
-              "latitude": 37.3300,
-              "longitude": -121.8857
-          },
-          "ticketLink": "https://ti.to/jim-dalrymple/the-loop-bash-at-wwdc"
-      }
-    ]
-  },
-  {
-    "date": {
-      "timeZone": {
-        "identifier": "America/Los_Angeles"
-      },
-      "year": 2019,
-      "month": 6,
-      "day": 4
+        "items": [
+            {
+                "id": "DubDubRun040619",
+                "tag": "Get-Together",
+                "title": "Dub Dub Run",
+                "description": "Kick off your mornings right with an easy 5k jog along the scenic Guadalupe River while chattting about all the fun stuff announced at WWDC.",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 4,
+                    "hour": 7,
+                    "minute": 20
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 4,
+                    "hour": 8
+                },
+                "location": {
+                    "latitude": 37.331,
+                    "longitude": -121.894
+                }
+            },
+            {
+                "id": "TheTalkShow",
+                "tag": "Podcast",
+                "title": "The Talk Show with John Gruber Live",
+                "description": "Join renowned columnist and podcaster John Gruber of Daring Fireball as he discusses the latest advancements in technology live from San Jose.",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 4,
+                    "hour": 19
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 4,
+                    "hour": 21
+                },
+                "location": {
+                    "name": "California Theatre",
+                    "latitude": 37.3308,
+                    "longitude": -121.887
+                },
+                "ticketLink": "https://daringfireball.net/thetalkshow/live"
+            },
+            {
+                "id": "VaporAtWWDC",
+                "tag": "Get-Together",
+                "title": "Vapor @ WWDC Meetup",
+                "description": "A meetup to talk about all things server-side Swift and Vapor for those attending WWDC, AltConf or nearby! Location is not yet confirmed (but possibly San Pedro Square).",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 4,
+                    "hour": 19
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 4,
+                    "hour": 22
+                },
+                "location": {
+                    "name": "San Pedro Square",
+                    "latitude": 37.3355,
+                    "longitude": -121.8921
+                },
+                "ticketLink": "https://www.meetup.com/Vapor-WWDC/events/261508450/"
+            }
+        ]
     },
-    "items": [{
-        "id": "DubDubRun040619",
-        "tag": "Get-Together",
-        "title": "Dub Dub Run",
-        "description": "Kick off your mornings right with an easy 5k jog along the scenic Guadalupe River while chattting about all the fun stuff announced at WWDC.",
-        "startDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 4,
-          "hour": 7,
-          "minute": 20
+    {
+        "date": {
+            "timeZone": {
+                "identifier": "America/Los_Angeles"
+            },
+            "year": 2019,
+            "month": 6,
+            "day": 5
         },
-        "endDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 4,
-          "hour": 8
-        },
-        "location": {
-          "latitude": 37.331,
-          "longitude": -121.894
-        }
-      },
-      {
-        "id": "TheTalkShow",
-        "tag": "Podcast",
-        "title": "The Talk Show with John Gruber Live",
-        "description": "Join renowned columnist and podcaster John Gruber of Daring Fireball as he discusses the latest advancements in technology live from San Jose.",
-        "startDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 4,
-          "hour": 19
-        },
-        "endDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 4,
-          "hour": 21
-        },
-        "location": {
-          "name": "California Theatre",
-          "latitude": 37.330800,
-          "longitude": -121.887000
-        },
-        "ticketLink": "https://daringfireball.net/thetalkshow/live"
-      },
-      {
-          "id": "VaporAtWWDC",
-          "tag": "Get-Together",
-          "title": "Vapor @ WWDC Meetup",
-          "description": "A meetup to talk about all things server-side Swift and Vapor for those attending WWDC, AltConf or nearby! Location is not yet confirmed (but possibly San Pedro Square).",
-          "startDate": {
-              "timeZone": {
-                  "identifier": "America/Los_Angeles"
-              },
-              "year": 2019,
-              "month": 6,
-              "day": 4,
-              "hour": 19
-          },
-          "endDate": {
-              "timeZone": {
-                  "identifier": "America/Los_Angeles"
-              },
-              "year": 2019,
-              "month": 6,
-              "day": 4,
-              "hour": 22
-          },
-          "location": {
-              "name": "San Pedro Square",
-              "latitude": 37.3355,
-              "longitude": -121.8921
-          },
-          "ticketLink": "https://www.meetup.com/Vapor-WWDC/events/261508450/"
-      }
-    ]
-  },
-  {
-    "date": {
-      "timeZone": {
-        "identifier": "America/Los_Angeles"
-      },
-      "year": 2019,
-      "month": 6,
-      "day": 5
+        "items": [
+            {
+                "id": "OfficialWWDCRun",
+                "tag": "Get-Together",
+                "title": "Official WWDC Run with Joan Benoit Samuelson",
+                "description": "Celebrate Global Running Day with an invigorating run through San Jose led by the amazing Joan Benoit Samuelson, winner of the Boston Marathon, the Chicago Marathon, and the first ever Women’s Olympic Marathon. Check-in starts at 6:30 a.m. WWDC ticket required.",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 5,
+                    "hour": 7
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 5,
+                    "hour": 8
+                },
+                "location": {
+                    "latitude": 37.3298,
+                    "longitude": -121.8888
+                }
+            },
+            {
+                "id": "DubDubClimb050619",
+                "tag": "Get-Together",
+                "title": "Dub Dub Climb",
+                "description": "What started as a few WWDC participants hitting the rock gym is evolving! Begin your day with a fun indoor climb while meeting other WWDC folks and chatting about all the announcements, afterparties and more!",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 5,
+                    "hour": 7,
+                    "minute": 15
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 5,
+                    "hour": 8,
+                    "minute": 30
+                },
+                "location": {
+                    "name": "The Studio",
+                    "latitude": 37.330321,
+                    "longitude": -121.88577
+                }
+            },
+            {
+                "id": "DubDubRun050619",
+                "tag": "Get-Together",
+                "title": "Dub Dub Run",
+                "description": "Kick off your mornings right with an easy 5k jog along the scenic Guadalupe River while chattting about all the fun stuff announced at WWDC.",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 5,
+                    "hour": 7,
+                    "minute": 20
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 5,
+                    "hour": 8
+                },
+                "location": {
+                    "latitude": 37.331,
+                    "longitude": -121.894
+                }
+            },
+            {
+                "id": "CallForCodeWorkshopDay",
+                "tag": "Get-Together",
+                "title": "IBM Call for Code Workshop Day",
+                "description": "Bring your Mac or use one of ours and go deep into the latest enterprise-ready mobile, machine learning, and cloud technologies available for iOS developers. During the day, there are 2 workshops which go in depth into Machine Learning and Server-side Swift. No registration required as these are first-come, first-serve workshops.",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 5,
+                    "hour": 9
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 5,
+                    "hour": 16
+                },
+                "location": {
+                    "name": "Willow Glenn Conference Room, San Jose Marriott",
+                    "latitude": 37.3308,
+                    "longitude": -121.8869
+                }
+            },
+            {
+                "id": "SwiftOverCoffeePodcast",
+                "tag": "Podcast",
+                "title": "Swift over Coffee Live",
+                "description": "Swift over Coffee is celebrating WWDC19 with a special expanded podcast event with guest hosts and lots of discussion of what's new from Cupertino! They'll also be joined by Kristina Fox, Gui Rambo, JP Simard, and Kaya Thomas as we dive into the major changes from WWDC19, what we're excited about, and how it will impact Swift developers over the next 12 months.",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 5,
+                    "hour": 17,
+                    "minute": 30
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 5,
+                    "hour": 18,
+                    "minute": 30
+                },
+                "location": {
+                    "name": "San Jose Marriott",
+                    "latitude": 37.3302,
+                    "longitude": -121.8885
+                },
+                "ticketLink": "https://ti.to/altconf/SwiftoverCoffeeLive"
+            },
+            {
+                "id": "ConnectedPodcast",
+                "tag": "Podcast",
+                "title": "Connected by Relay FM",
+                "description": "Gathered from the far corners of the globe, the Connected hosts make their annual trip to California to talk about WWDC, Apple’s announcements and the response from the community in what promises to be the most entertaining live podcast of the week.",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 5,
+                    "hour": 18
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 5,
+                    "hour": 20
+                },
+                "location": {
+                    "name": "Hammer Theatre",
+                    "latitude": 37.3337,
+                    "longitude": -121.8865
+                },
+                "ticketLink": "https://hammertheatre.vbotickets.com/event/Relay_FM_Connected_Podcast/33940"
+            },
+            {
+                "id": "CallForCodeReception",
+                "tag": "Get-Together",
+                "title": "IBM Call for Code Reception",
+                "description": "End your day at Apple’s Worldwide Developer’s Conference at IBM’s Call for Code Reception and discover how you and your peers can make a difference in solving society’s most pressing issues. This is your chance to connect with fellow developers for fun and refreshments.",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 5,
+                    "hour": 18,
+                    "minute": 30
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 5,
+                    "hour": 20,
+                    "minute": 30
+                },
+                "location": {
+                    "name": "Continental Bar Lounge and Patio",
+                    "latitude": 37.3308,
+                    "longitude": -121.8869
+                },
+                "ticketLink": "http://ibm.biz/Call4Code-SJ"
+            },
+            {
+                "id": "JamesDempseyAndTheBreakpoints",
+                "tag": "Podcast",
+                "title": "James Dempsey and the Breakpoints",
+                "description": "Live Near WWDC 2019: Join the iTunes chart-topping nerd band for a night of original programming-oriented music and humor to benefit App Camp For Girls",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 5,
+                    "hour": 19
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 5,
+                    "hour": 23
+                },
+                "location": {
+                    "name": "The Ritz San Jose",
+                    "latitude": 37.3301,
+                    "longitude": -121.8856
+                },
+                "ticketLink": "https://livenearwwdc.com"
+            }
+        ]
     },
-    "items": [{
-        "id": "OfficialWWDCRun",
-        "tag": "Get-Together",
-        "title": "Official WWDC Run with Joan Benoit Samuelson",
-        "description": "Celebrate Global Running Day with an invigorating run through San Jose led by the amazing Joan Benoit Samuelson, winner of the Boston Marathon, the Chicago Marathon, and the first ever Women’s Olympic Marathon. Check-in starts at 6:30 a.m. WWDC ticket required.",
-        "startDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 5,
-          "hour": 7
+    {
+        "date": {
+            "timeZone": {
+                "identifier": "America/Los_Angeles"
+            },
+            "year": 2019,
+            "month": 6,
+            "day": 6
         },
-        "endDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 5,
-          "hour": 8
-        },
-        "location": {
-          "latitude": 37.3298,
-          "longitude": -121.8888
-        }
-      },
-      {
-        "id": "DubDubClimb050619",
-        "tag": "Get-Together",
-        "title": "Dub Dub Climb",
-        "description": "What started as a few WWDC participants hitting the rock gym is evolving! Begin your day with a fun indoor climb while meeting other WWDC folks and chatting about all the announcements, afterparties and more!",
-        "startDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 5,
-          "hour": 7,
-          "minute": 15
-        },
-        "endDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 5,
-          "hour": 8,
-          "minute": 30
-        },
-        "location": {
-          "name": "The Studio",
-          "latitude": 37.330321,
-          "longitude": -121.885770
-        }
-      },
-      {
-        "id": "DubDubRun050619",
-        "tag": "Get-Together",
-        "title": "Dub Dub Run",
-        "description": "Kick off your mornings right with an easy 5k jog along the scenic Guadalupe River while chattting about all the fun stuff announced at WWDC.",
-        "startDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 5,
-          "hour": 7,
-          "minute": 20
-        },
-        "endDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 5,
-          "hour": 8
-        },
-        "location": {
-          "latitude": 37.331,
-          "longitude": -121.894
-        }
-      },
-      {
-          "id": "CallForCodeWorkshopDay",
-          "tag": "Get-Together",
-          "title": "IBM Call for Code Workshop Day",
-          "description": "Bring your Mac or use one of ours and go deep into the latest enterprise-ready mobile, machine learning, and cloud technologies available for iOS developers. During the day, there are 2 workshops which go in depth into Machine Learning and Server-side Swift. No registration required as these are first-come, first-serve workshops.",
-          "startDate": {
-              "timeZone": {
-                  "identifier": "America/Los_Angeles"
-              },
-              "year": 2019,
-              "month": 6,
-              "day": 5,
-              "hour": 9
-          },
-          "endDate": {
-              "timeZone": {
-                  "identifier": "America/Los_Angeles"
-              },
-              "year": 2019,
-              "month": 6,
-              "day": 5,
-              "hour": 16
-          },
-          "location": {
-              "name": "Willow Glenn Conference Room, San Jose Marriott",
-              "latitude": 37.3308,
-              "longitude": -121.8869
-          }
-      },
-      {
-        "id": "SwiftOverCoffeePodcast",
-        "tag": "Podcast",
-        "title": "Swift over Coffee Live",
-        "description": "Swift over Coffee is celebrating WWDC19 with a special expanded podcast event with guest hosts and lots of discussion of what's new from Cupertino! They'll also be joined by Kristina Fox, Gui Rambo, JP Simard, and Kaya Thomas as we dive into the major changes from WWDC19, what we're excited about, and how it will impact Swift developers over the next 12 months.",
-        "startDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 5,
-          "hour": 17,
-          "minute": 30
-        },
-        "endDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 5,
-          "hour": 18,
-          "minute": 30
-        },
-        "location": {
-          "name": "San Jose Marriott",
-          "latitude": 37.3302,
-          "longitude": -121.8885
-        },
-        "ticketLink": "https://ti.to/altconf/SwiftoverCoffeeLive"
-      },
-      {
-        "id": "ConnectedPodcast",
-        "tag": "Podcast",
-        "title": "Connected by Relay FM",
-        "description": "Gathered from the far corners of the globe, the Connected hosts make their annual trip to California to talk about WWDC, Apple’s announcements and the response from the community in what promises to be the most entertaining live podcast of the week.",
-        "startDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 5,
-          "hour": 18
-        },
-        "endDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 5,
-          "hour": 20
-        },
-        "location": {
-          "name": "Hammer Theatre",
-          "latitude": 37.3337,
-          "longitude": -121.8865
-        },
-        "ticketLink": "https://hammertheatre.vbotickets.com/event/Relay_FM_Connected_Podcast/33940"
-      },
-      {
-          "id": "CallForCodeReception",
-          "tag": "Get-Together",
-          "title": "IBM Call for Code Reception",
-          "description": "End your day at Apple’s Worldwide Developer’s Conference at IBM’s Call for Code Reception and discover how you and your peers can make a difference in solving society’s most pressing issues. This is your chance to connect with fellow developers for fun and refreshments.",
-          "startDate": {
-              "timeZone": {
-                  "identifier": "America/Los_Angeles"
-              },
-              "year": 2019,
-              "month": 6,
-              "day": 5,
-              "hour": 18,
-              "minute": 30
-          },
-          "endDate": {
-              "timeZone": {
-                  "identifier": "America/Los_Angeles"
-              },
-              "year": 2019,
-              "month": 6,
-              "day": 5,
-              "hour": 20,
-              "minute": 30
-          },
-          "location": {
-              "name": "Continental Bar Lounge and Patio",
-              "latitude": 37.3308,
-              "longitude": -121.8869
-          },
-          "ticketLink": "http://ibm.biz/Call4Code-SJ"
-      },
-      {
-        "id": "JamesDempseyAndTheBreakpoints",
-        "tag": "Podcast",
-        "title": "James Dempsey and the Breakpoints",
-        "description": "Live Near WWDC 2019: Join the iTunes chart-topping nerd band for a night of original programming-oriented music and humor to benefit App Camp For Girls",
-        "startDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 5,
-          "hour": 19
-        },
-        "endDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 5,
-          "hour": 23
-        },
-        "location": {
-          "name": "The Ritz San Jose",
-          "latitude": 37.3301,
-          "longitude": -121.8856
-        },
-        "ticketLink": "https://livenearwwdc.com"
-      }
-    ]
-  },
-  {
-    "date": {
-      "timeZone": {
-        "identifier": "America/Los_Angeles"
-      },
-      "year": 2019,
-      "month": 6,
-      "day": 6
+        "items": [
+            {
+                "id": "DubDubClimb060619",
+                "tag": "Get-Together",
+                "title": "Dub Dub Climb",
+                "description": "What started as a few WWDC participants hitting the rock gym is evolving! Begin your day with a fun indoor climb while meeting other WWDC folks and chatting about all the announcements, afterparties and more!",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 6,
+                    "hour": 7,
+                    "minute": 15
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 6,
+                    "hour": 8,
+                    "minute": 30
+                },
+                "location": {
+                    "name": "The Studio",
+                    "latitude": 37.330321,
+                    "longitude": -121.88577
+                }
+            },
+            {
+                "id": "DubDubRun060619",
+                "tag": "Get-Together",
+                "title": "Dub Dub Run",
+                "description": "Kick off your mornings right with an easy 5k jog along the scenic Guadalupe River while chattting about all the fun stuff announced at WWDC.",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 6,
+                    "hour": 7,
+                    "minute": 20
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 6,
+                    "hour": 8
+                },
+                "location": {
+                    "latitude": 37.331,
+                    "longitude": -121.894
+                }
+            },
+            {
+                "id": "LadiesAtWWDC",
+                "tag": "Get-Together",
+                "title": "Ladies at WWDC Dinner",
+                "description": "Enjoy an evening of fun networking, delicious appetizers, awesome swag, and one-of-a-kind cocktails with your fellow women-in-tech during WWDC.",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 6,
+                    "hour": 17
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 6,
+                    "hour": 20
+                },
+                "location": {
+                    "name": "Social Lady Bar and Restaurant",
+                    "latitude": 37.3352,
+                    "longitude": -121.8878
+                },
+                "ticketLink": "https://ti.to/iOS-meetups/ladies-at-wwdc"
+            },
+            {
+                "id": "Bash",
+                "tag": "Special Event",
+                "title": "The Bash",
+                "description": "Experience incredible music, food, and drinks at Discovery Meadow, just steps away from the McEnery Convention Center.",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 6,
+                    "hour": 19
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 6,
+                    "hour": 22
+                },
+                "location": {
+                    "latitude": 37.3278,
+                    "longitude": -121.8925
+                }
+            },
+            {
+                "id": "NightOfDimSum060619",
+                "tag": "Other",
+                "title": "Night of Dim Sum 2019",
+                "description": "Join us for a night of all-you-can-eat dim sum! Located just a couple of miles from downtown San Jose in the Westfield Valley Fair Mall (where there is also an Apple Store and a LEGO store), Din Tai Fung is internationally known as one of the world's best Shanghai dumpling restaurants.",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 6,
+                    "hour": 19
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 6,
+                    "hour": 21
+                },
+                "location": {
+                    "name": "Din Tai Fung (Westfield Valley Fair Mall)",
+                    "latitude": 37.3261,
+                    "longitude": -121.9441
+                },
+                "ticketLink": "https://www.eventbrite.com/e/night-of-dim-sum-2019-tickets-54087628553"
+            }
+        ]
     },
-    "items": [{
-        "id": "DubDubClimb060619",
-        "tag": "Get-Together",
-        "title": "Dub Dub Climb",
-        "description": "What started as a few WWDC participants hitting the rock gym is evolving! Begin your day with a fun indoor climb while meeting other WWDC folks and chatting about all the announcements, afterparties and more!",
-        "startDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 6,
-          "hour": 7,
-          "minute": 15
+    {
+        "date": {
+            "timeZone": {
+                "identifier": "America/Los_Angeles"
+            },
+            "year": 2019,
+            "month": 6,
+            "day": 7
         },
-        "endDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 6,
-          "hour": 8,
-          "minute": 30
-        },
-        "location": {
-          "name": "The Studio",
-          "latitude": 37.330321,
-          "longitude": -121.885770
-        }
-      },
-      {
-        "id": "DubDubRun060619",
-        "tag": "Get-Together",
-        "title": "Dub Dub Run",
-        "description": "Kick off your mornings right with an easy 5k jog along the scenic Guadalupe River while chattting about all the fun stuff announced at WWDC.",
-        "startDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 6,
-          "hour": 7,
-          "minute": 20
-        },
-        "endDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 6,
-          "hour": 8
-        },
-        "location": {
-          "latitude": 37.331,
-          "longitude": -121.894
-        }
-      },
-      {
-          "id": "LadiesAtWWDC",
-          "tag": "Get-Together",
-          "title": "Ladies at WWDC Dinner",
-          "description": "Enjoy an evening of fun networking, delicious appetizers, awesome swag, and one-of-a-kind cocktails with your fellow women-in-tech during WWDC.",
-          "startDate": {
-              "timeZone": {
-                  "identifier": "America/Los_Angeles"
-              },
-              "year": 2019,
-              "month": 6,
-              "day": 6,
-              "hour": 17
-          },
-          "endDate": {
-              "timeZone": {
-                  "identifier": "America/Los_Angeles"
-              },
-              "year": 2019,
-              "month": 6,
-              "day": 6,
-              "hour": 20
-          },
-          "location": {
-              "name": "Social Lady Bar and Restaurant",
-              "latitude": 37.3352,
-              "longitude": -121.8878
-          },
-          "ticketLink": "https://ti.to/iOS-meetups/ladies-at-wwdc"
-      },
-      {
-        "id": "Bash",
-        "tag": "Special Event",
-        "title": "The Bash",
-        "description": "Experience incredible music, food, and drinks at Discovery Meadow, just steps away from the McEnery Convention Center.",
-        "startDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 6,
-          "hour": 19
-        },
-        "endDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 6,
-          "hour": 22
-        },
-        "location": {
-          "latitude": 37.3278,
-          "longitude": -121.8925
-        }
-      },
-      {
-        "id": "NightOfDimSum060619",
-        "tag": "Other",
-        "title": "Night of Dim Sum 2019",
-        "description": "Join us for a night of all-you-can-eat dim sum! Located just a couple of miles from downtown San Jose in the Westfield Valley Fair Mall (where there is also an Apple Store and a LEGO store), Din Tai Fung is internationally known as one of the world's best Shanghai dumpling restaurants.",
-        "startDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 6,
-          "hour": 19
-        },
-        "endDate": {
-          "timeZone": {
-            "identifier": "America/Los_Angeles"
-          },
-          "year": 2019,
-          "month": 6,
-          "day": 6,
-          "hour": 21
-        },
-        "location": {
-          "name": "Din Tai Fung (Westfield Valley Fair Mall)",
-          "latitude": 37.3261,
-          "longitude": -121.9441
-        },
-        "ticketLink": "https://www.eventbrite.com/e/night-of-dim-sum-2019-tickets-54087628553"
-      }
-    ]
-  },
-  {
-    "date": {
-      "timeZone": {
-        "identifier": "America/Los_Angeles"
-      },
-      "year": 2019,
-      "month": 6,
-      "day": 7
-    },
-    "items": [{
-      "id": "TrySwiftSanJose",
-      "tag": "Other",
-      "title": "try! Swift San Jose",
-      "description": "try! Swift is an international community gathering about the latest advancements in Swift Development, all about bringing together talent from all around the world to collaborate and share advanced knowledge and techniques to improve Swift craftsmanship. ",
-      "startDate": {
-        "timeZone": {
-          "identifier": "America/Los_Angeles"
-        },
-        "year": 2019,
-        "month": 6,
-        "day": 7,
-        "hour": 10
-      },
-      "endDate": {
-        "timeZone": {
-          "identifier": "America/Los_Angeles"
-        },
-        "year": 2019,
-        "month": 6,
-        "day": 7,
-        "hour": 17
-      },
-      "location": {
-        "name": "Hilton San Jose",
-        "latitude": 37.3293,
-        "longitude": -121.8905
-      },
-      "ticketLink": "https://www.tryswift.co/events/2019/sanjose/"
-    }]
-  }
+        "items": [
+            {
+                "id": "TrySwiftSanJose",
+                "tag": "Other",
+                "title": "try! Swift San Jose",
+                "description": "try! Swift is an international community gathering about the latest advancements in Swift Development, all about bringing together talent from all around the world to collaborate and share advanced knowledge and techniques to improve Swift craftsmanship. ",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 7,
+                    "hour": 10
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 7,
+                    "hour": 17
+                },
+                "location": {
+                    "name": "Hilton San Jose",
+                    "latitude": 37.3293,
+                    "longitude": -121.8905
+                },
+                "ticketLink": "https://www.tryswift.co/events/2019/sanjose/"
+            }
+        ]
+    }
 ]
