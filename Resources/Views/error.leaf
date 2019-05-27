@@ -3,21 +3,22 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-  <meta property="og:site_name" content="DubDub+ Events" />
+  <meta property="og:site_name" content="WWDC Events" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="DubDub+ Events" />
+  <meta name="twitter:title" content="WWDC Events" />
   <meta name="twitter:url" content="https://events.wwdc.plus" />
   <meta name="twitter:creator" content="justJS" />
+  <meta name="twitter:site" content="@justjs_dev">
   <!-- Facebook OG -->
-  <meta property="og:title" content="DubDub+ Events" />
+  <meta property="og:title" content="WWDC Events" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://events.wwdc.plus" />
   <meta property="og:locale" content="en_us" />
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>DubDub+ Events</title>
+  <title>WWDC Events</title>
   <link rel="stylesheet" href="base.css">
   <link rel="stylesheet" href="https://wwdc.date/assets/css/fonts.css">
 </head>
