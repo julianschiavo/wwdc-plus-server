@@ -21,6 +21,7 @@ struct JSONEvent: Content, Codable, Hashable {
     
     var location: Coordinate
     
+    var imageLink: URL?
     var ticketLink: URL?
     var moreInfoLink: URL?
     
@@ -35,5 +36,18 @@ struct JSONEvent: Content, Codable, Hashable {
         self.location = Coordinate(name: place, latitude: latitude, longitude: longitude)
         self.ticketLink = ticketLink != nil ? URL(string: ticketLink!) : nil
         self.moreInfoLink = moreInfoLink != nil ? URL(string: moreInfoLink!) : nil
+        
+        let directory = DirectoryConfig.detect().workDir
+        let directoryURL = URL(fileURLWithPath: directory)
+        let imagesDirectoryURL = directoryURL.appendingPathComponent("Public", isDirectory: true).appendingPathComponent("EventImages", isDirectory: true)
+        
+        let pngURL = imagesDirectoryURL.appendingPathComponent("\(id).png")
+        let jpgURL = imagesDirectoryURL.appendingPathComponent("\(id).jpg")
+        
+        if let _ = try? Data(contentsOf: pngURL) {
+            self.imageLink = URL(string: "https://events.wwdc.plus/EventImages/\(id).png")
+        } else if let _ = try? Data(contentsOf: jpgURL) {
+            self.imageLink = URL(string: "https://events.wwdc.plus/EventImages/\(id).jpg")
+        }
     }
 }

@@ -16,6 +16,13 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://events.wwdc.plus/#(slug)" />
   <meta property="og:locale" content="en_us" />
+
+  <!-- Images -->
+  #if(imageLink != nil) {
+    <meta property="og:image" content="#(imageLink)">
+    <meta name="twitter:card" content="summary_large_image">
+  }
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>#(name) - DubDub+ Events</title>

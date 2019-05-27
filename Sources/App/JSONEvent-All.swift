@@ -396,6 +396,26 @@ extension JSONEvent {
             
             // MARK: Other
             
+            JSONEvent(id: "Burritos1",
+                      tag: .other,
+                      title: "Breakfast Burritos with Embrace",
+                      description: "To help fuel developers through the many sessions, meetups, conferences and happy hours during the week of WWDC, Embrace is serving free breakfast burritos! The team will be parked near the convention center handing out breakfast burritos for hungry attendees of WWDC and AltConf.",
+                      startDate: .default(day: 4, hour: 8, minute: 0, second: 0),
+                      endDate: .default(day: 4, hour: 12, minute: 0, second: 0),
+                      latitude: 37.3298,
+                      longitude: -121.8888,
+                      moreInfoLink: "https://www.eventbrite.com/e/breakfast-burritos-with-embrace-tickets-62308195490"),
+            
+            JSONEvent(id: "Burritos2",
+                      tag: .other,
+                      title: "Breakfast Burritos with Embrace",
+                      description: "To help fuel developers through the many sessions, meetups, conferences and happy hours during the week of WWDC, Embrace is serving free breakfast burritos! The team will be parked near the convention center handing out breakfast burritos for hungry attendees of WWDC and AltConf.",
+                      startDate: .default(day: 5, hour: 8, minute: 0, second: 0),
+                      endDate: .default(day: 5, hour: 12, minute: 0, second: 0),
+                      latitude: 37.3298,
+                      longitude: -121.8888,
+                      moreInfoLink: "https://www.eventbrite.com/e/breakfast-burritos-with-embrace-tickets-62308195490"),
+            
             JSONEvent(id: "TrySwiftSanJose",
                       tag: .other,
                       title: "try! Swift San Jose",

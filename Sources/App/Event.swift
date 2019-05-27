@@ -59,6 +59,7 @@ public struct Event: Codable, Hashable {
     var latitude: Double
     var longitude: Double
     
+    var imageLink: String?
     var ticketLink: String?
     var moreInfoLink: String?
     
@@ -90,6 +91,7 @@ public struct Event: Codable, Hashable {
                      placeName: event.location.name,
                      latitude: event.location.latitude,
                      longitude: event.location.longitude,
+                     imageLink: event.imageLink?.absoluteString,
                      ticketLink: event.ticketLink?.absoluteString,
                      moreInfoLink: event.moreInfoLink?.absoluteString)
     }
