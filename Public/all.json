@@ -369,6 +369,65 @@
                 }
             },
             {
+                "id": "Burritos1",
+                "tag": "Other",
+                "title": "Breakfast Burritos with Embrace",
+                "description": "To help fuel developers through the many sessions, meetups, conferences and happy hours during the week of WWDC, Embrace is serving free breakfast burritos! The team will be parked near the convention center handing out breakfast burritos for hungry attendees of WWDC and AltConf.",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 4,
+                    "hour": 8
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 4,
+                    "hour": 12
+                },
+                "location": {
+                    "latitude": 37.3298,
+                    "longitude": -121.8888
+                },
+                "moreInfoLink": "https://www.eventbrite.com/e/breakfast-burritos-with-embrace-tickets-62308195490"
+            },
+            {
+                "id": "MicroblogMeetup",
+                "tag": "Get-Together",
+                "title": "Micro.blog Meetup",
+                "description": "The 3rd Annual Micro.blog meetup during WWDC week in San Jose for anyone interested in Micro.blog. Meet Manton, Jean, and other microbloggers. Ask questions and share tips.",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 4,
+                    "hour": 12
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 4,
+                    "hour": 14
+                },
+                "location": {
+                    "name": "Outside Grace Deli",
+                    "latitude": 37.3287,
+                    "longitude": -121.8916
+                },
+                "ticketLink": "https://docs.google.com/forms/d/e/1FAIpQLSfD5ItpNQ9DMoZJuAG54Kuv0UyD0sy2dt5Pr55KhWfAf0yM0Q/viewform"
+            },
+            {
                 "id": "TheTalkShow",
                 "tag": "Podcast",
                 "title": "The Talk Show with John Gruber Live",
@@ -527,6 +586,35 @@
                     "latitude": 37.331,
                     "longitude": -121.894
                 }
+            },
+            {
+                "id": "Burritos2",
+                "tag": "Other",
+                "title": "Breakfast Burritos with Embrace",
+                "description": "To help fuel developers through the many sessions, meetups, conferences and happy hours during the week of WWDC, Embrace is serving free breakfast burritos! The team will be parked near the convention center handing out breakfast burritos for hungry attendees of WWDC and AltConf.",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 5,
+                    "hour": 8
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 5,
+                    "hour": 12
+                },
+                "location": {
+                    "latitude": 37.3298,
+                    "longitude": -121.8888
+                },
+                "moreInfoLink": "https://www.eventbrite.com/e/breakfast-burritos-with-embrace-tickets-62308195490"
             },
             {
                 "id": "CallForCodeWorkshopDay",

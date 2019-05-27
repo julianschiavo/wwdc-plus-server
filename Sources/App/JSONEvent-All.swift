@@ -296,6 +296,17 @@ extension JSONEvent {
                       longitude: -121.894,
                       moreInfoLink: "https://dubdub.fitness/run.html"),
             
+            JSONEvent(id: "MicroblogMeetup",
+                      tag: .meetup,
+                      title: "Micro.blog Meetup",
+                      description: "The 3rd Annual Micro.blog meetup during WWDC week in San Jose for anyone interested in Micro.blog. Meet Manton, Jean, and other microbloggers. Ask questions and share tips.",
+                      startDate: .default(day: 4, hour: 12, minute: 0, second: 0),
+                      endDate: .default(day: 4, hour: 14, minute: 0, second: 0),
+                      place: "Outside Grace Deli",
+                      latitude: 37.3287,
+                      longitude: -121.8916,
+                      ticketLink: "https://docs.google.com/forms/d/e/1FAIpQLSfD5ItpNQ9DMoZJuAG54Kuv0UyD0sy2dt5Pr55KhWfAf0yM0Q/viewform"),
+            
             JSONEvent(id: "VaporAtWWDC",
                       tag: .meetup,
                       title: "Vapor @ WWDC Meetup",
