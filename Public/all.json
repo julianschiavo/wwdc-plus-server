@@ -845,7 +845,7 @@
                 "id": "LadiesAtWWDC",
                 "tag": "Get-Together",
                 "title": "Ladies at WWDC Dinner",
-                "description": "Enjoy an evening of fun networking, delicious appetizers, awesome swag, and one-of-a-kind cocktails with your fellow women-in-tech during WWDC.",
+                "description": "Enjoy an evening of fun networking, delicious appetizers, awesome swag, and themed cocktails with your fellow women-in-tech during WWDC.",
                 "startDate": {
                     "timeZone": {
                         "identifier": "America/Los_Angeles"
@@ -865,9 +865,9 @@
                     "hour": 20
                 },
                 "location": {
-                    "name": "Social Lady Bar and Restaurant",
-                    "latitude": 37.3352,
-                    "longitude": -121.8878
+                    "name": "Scott's Seafood",
+                    "latitude": 37.3315,
+                    "longitude": -121.8917
                 },
                 "ticketLink": "https://ti.to/iOS-meetups/ladies-at-wwdc"
             },
