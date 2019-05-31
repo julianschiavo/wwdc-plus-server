@@ -318,6 +318,17 @@ extension JSONEvent {
                       longitude: -121.8921,
                       ticketLink: "https://www.meetup.com/Vapor-WWDC/events/261508450/"),
             
+            JSONEvent(id: "HomekitMeetup",
+                      tag: .meetup,
+                      title: "HomeKit Meetup",
+                      description: "Are you a developer working on HomeKit hardware, firmware, or apps? Maybe just a user who is interested in HomeKit? We are getting folks together in San Jose to hang out and have a beer and talk smart home. Adam & Leo from ConnectSense will have some stickers, pins and other swag to hand out.",
+                      startDate: .default(day: 4, hour: 21, minute: 0, second: 0),
+                      endDate: .default(day: 4, hour: 22, minute: 0, second: 0),
+                      place: "Original Gravity Public House",
+                      latitude: 37.3351,
+                      longitude: -121.8896,
+                      ticketLink: "https://www.eventbrite.com/e/homekit-meetup-no-wwdc-badge-needed-tickets-62508713244"),
+            
             JSONEvent(id: "DubDubClimb050619",
                       tag: .meetup,
                       title: "Dub Dub Climb",

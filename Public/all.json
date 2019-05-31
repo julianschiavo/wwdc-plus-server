@@ -486,6 +486,36 @@
                     "longitude": -121.8921
                 },
                 "ticketLink": "https://www.meetup.com/Vapor-WWDC/events/261508450/"
+            },
+            {
+                "id": "HomekitMeetup",
+                "tag": "Get-Together",
+                "title": "HomeKit Meetup",
+                "description": "Are you a developer working on HomeKit hardware, firmware, or apps? Maybe just a user who is interested in HomeKit? We are getting folks together in San Jose to hang out and have a beer and talk smart home. Adam & Leo from ConnectSense will have some stickers, pins and other swag to hand out.",
+                "startDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 4,
+                    "hour": 21
+                },
+                "endDate": {
+                    "timeZone": {
+                        "identifier": "America/Los_Angeles"
+                    },
+                    "year": 2019,
+                    "month": 6,
+                    "day": 4,
+                    "hour": 22
+                },
+                "location": {
+                    "name": "Original Gravity Public House",
+                    "latitude": 37.3351,
+                    "longitude": -121.8896
+                },
+                "ticketLink": "https://www.eventbrite.com/e/homekit-meetup-no-wwdc-badge-needed-tickets-62508713244"
             }
         ]
     },
